@@ -1,7 +1,16 @@
 $(function () {
     "use strict";
 
-
+    //======MENU FIX========
+    if ($('.main_menu').offset() != undefined) {
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() > 40) {
+                $('.main_menu').addClass('menu_fix');
+            } else {
+                $('.main_menu').removeClass('menu_fix');
+            }
+        });
+    }
 
 
     //======NICE SELECT========
@@ -10,19 +19,6 @@ $(function () {
 
     //=======COUNTER JS=======
     $('.counter').countUp();
-
-
-
-
-
-
-
-    //========= summer note js =========
-    // $(document).ready(function () {
-    //     $('.summer_note').summernote();
-    // });
-
-
 
 
     //=======TESTI SLIDER======
@@ -68,6 +64,11 @@ $(function () {
         ]
     });
 
+
+    //========= summer note js =========
+    // $(document).ready(function () {
+    //     $('.summer_note').summernote();
+    // });
 
 
 
