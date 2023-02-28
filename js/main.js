@@ -65,6 +65,25 @@ $(function () {
     });
 
 
+    //=======TESTI SLIDER======
+    $('.pro_det_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: true,
+        nextArrow: '<i class="far fa-angle-right nextArrow"></i>',
+        prevArrow: '<i class="far fa-angle-left prevArrow"></i>',
+    });
+
+
+    //=====STICKY SIDEBAR====== 
+    $("#sticky_sidebar").stickit({
+        top: 70,
+    })
+
+
     //========= summer note js =========
     // $(document).ready(function () {
     //     $('.summer_note').summernote();
