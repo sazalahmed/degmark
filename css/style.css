@@ -546,6 +546,7 @@ header .container,
 .menu_fix {
     position: fixed;
     top: 0;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 10%);
 }
 
 /* menu end */
@@ -2275,7 +2276,7 @@ footer {
 }
 
 .wsus__cart_coupone input {
-    padding: 15.5px 40px;
+    padding: 15.5px 20px;
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -2370,8 +2371,325 @@ footer {
 ============================*/
 
 
+/*============================
+    CART EMPTY START
+============================*/
+.wsus__cart_empty_text {
+    text-align: center;
+}
+
+.wsus__cart_empty_text .img {
+    height: 490px;
+}
+
+.wsus__cart_empty_text h3 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 45px 0px 35px 0px;
+}
+
+/*============================
+    CART EMPTY END
+============================*/
 
 
+/*============================
+    CHECKOUT START
+============================*/
+.wsus__checkout_text {
+    box-shadow: 0px 25px 63px rgb(0 0 0 / 5%);
+}
+
+.wsus__checkout_text h3 {
+    padding: 20px 30px;
+    border-radius: 4px;
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.wsus__checkout_form {
+    padding: 5px 30px 30px 30px;
+}
+
+.wsus__checkout_form_single {
+    margin-top: 25px;
+}
+
+.wsus__checkout_form_single label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--paraColor);
+}
+
+.wsus__checkout_form_single input,
+.wsus__checkout_form_single textarea {
+    font-size: 13px;
+    padding-left: 20px;
+    background: rgba(247, 232, 242, 0.27);
+    border: 1px solid #e8e8e8;
+    outline: 0;
+    border-radius: 4px;
+}
+
+.wsus__checkout_text .nav {
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+    margin: 30px 30px 0px 30px;
+}
+
+.wsus__checkout_text .nav .nav-item {
+    width: 25%;
+}
+
+.wsus__checkout_text .nav .nav-item .nav-link {
+    width: 100%;
+    border-radius: 0;
+    border-right: 1px solid #d9d9d9;
+    padding: 20px;
+    position: relative;
+    transition: all linear 0s;
+    -webkit-transition: all linear 0s;
+    -moz-transition: all linear 0s;
+    -ms-transition: all linear 0s;
+    -o-transition: all linear 0s;
+}
+
+.wsus__checkout_text .nav .nav-item:last-child .nav-link {
+    border-right: 0;
+}
+
+.wsus__checkout_text .nav .nav-item .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #da126a;
+    pointer-events: none;
+    bottom: 0;
+    left: 50%;
+    z-index: 9;
+    transform: rotate(45deg) translateY(50%);
+    opacity: 0;
+    -webkit-transform: rotate(45deg) translateY(50%);
+    -moz-transform: rotate(45deg) translateY(50%);
+    -ms-transform: rotate(45deg) translateY(50%);
+    -o-transform: rotate(45deg) translateY(50%);
+    transition: all linear 0s;
+    -webkit-transition: all linear 0s;
+    -moz-transition: all linear 0s;
+    -ms-transition: all linear 0s;
+    -o-transition: all linear 0s;
+}
+
+.wsus__checkout_text .nav .nav-item .nav-link.active {
+    background: var(--colorPrimary);
+}
+
+.wsus__checkout_text .nav .nav-item .nav-link.active::before {
+    opacity: 1;
+}
+
+.wsus__checkout_footer {
+    padding: 0px 30px 30px 30px;
+    text-align: center;
+}
+
+.wsus__checkout_footer .note {
+    background: rgba(218, 18, 106, 0.07);
+    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.wsus__checkout_footer button {
+    background: var(--colorYellow);
+    width: 345px;
+}
+
+.wsus__checkout_footer button:hover {
+    color: var(--colorBlack);
+    border-color: var(--colorYellow);
+}
+
+.wsus__checkout_footer .terms_condition {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.wsus__checkout_footer .terms_condition a {
+    color: var(--colorPrimary);
+}
+
+.wsus__checkout_sidebar {}
+
+.wsus__checkout_sidebar h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.wsus__checkout_sidebar ul {}
+
+.wsus__checkout_sidebar ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+}
+
+.wsus__checkout_sidebar ul li:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.wsus__checkout_sidebar ul li .img {
+    width: 120px;
+    height: 120px;
+    margin-right: 21px;
+}
+
+.wsus__checkout_sidebar ul li .text {
+    width: 66%;
+}
+
+.wsus__checkout_sidebar ul li .text a {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+}
+
+.wsus__checkout_sidebar ul li .text p {
+    font-size: 14px;
+    color: #da126a;
+    margin: 7px 0px 7px 0px;
+}
+
+.wsus__checkout_sidebar ul li .text h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #162b49;
+}
+
+
+.wsus__checkout_sidebar_price {
+    margin-top: 20px;
+    border: 1px solid #ededed;
+    padding: 25px 30px 30px;
+}
+
+.wsus__checkout_sidebar_price {}
+
+.wsus__checkout_sidebar_price p {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+.wsus__checkout_sidebar_price p span {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colorBlack);
+}
+
+.wsus__checkout_sidebar_price p .dis_amount {
+    color: var(--colorPrimary);
+}
+
+.wsus__checkout_sidebar_price .total {
+    border-top: 1px solid #ededed;
+    color: var(--colorBlack);
+    margin: 0;
+    padding: 0;
+}
+
+/*============================
+    CHECKOUT END
+============================*/
+
+/*============================
+    PAYMENT DONE START
+============================*/
+.wsus__payment_done_text {
+    text-align: center;
+}
+
+.wsus__payment_done_img {
+    height: 490px;
+}
+
+.wsus__payment_done_text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #162b49;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+/*============================
+    PAYMENT DONE END
+============================*/
+
+
+/*============================
+    BLOG DETAILS START
+============================*/
+.wsus__blog_details {}
+
+.wsus__blog_details_img {
+    height: 560px;
+    margin-bottom: 35px;
+}
+
+.wsus__blog_details_text {}
+
+.wsus__blog_details_header {}
+
+.wsus__blog_details_header li {
+    margin-right: 35px;
+    color: var(--paraColor);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.wsus__blog_details_header li i {
+    margin-right: 6px;
+    color: #da126a;
+}
+
+
+
+.wsus__blog_details_text {}
+
+.wsus__blog_details_text h3 {}
+
+.wsus__blog_details_text p {}
+
+
+
+
+
+
+
+/*============================
+    BLOG DETAILS END
+============================*/
 
 
 /*============================

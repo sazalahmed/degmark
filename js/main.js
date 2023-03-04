@@ -80,7 +80,7 @@ $(function () {
 
     //=====STICKY SIDEBAR====== 
     $("#sticky_sidebar").stickit({
-        top: 70,
+        top: 90,
     })
 
 
