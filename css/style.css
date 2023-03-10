@@ -3194,7 +3194,7 @@ footer {
 }
 
 .wsus__contact_map .map {
-    height: 200px;
+    height: 240px;
     background: var(--colorWhite);
     padding: 10px;
     border-radius: 4px;
@@ -3246,8 +3246,113 @@ footer {
 
 
 /*============================
+    PROFILE OVERVIEW START
+============================*/
+.wsus__profile_header {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 65px 40px;
+    position: relative;
+}
+
+.wsus__profile_header_text {
+    align-items: center;
+}
+
+.wsus__profile_header_text .img {
+    width: 260px;
+    height: 260px;
+    border: 8px solid var(--colorWhite);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.wsus__profile_header_text .text {
+    max-width: 60%;
+}
+
+.wsus__profile_header_text .text h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--colorWhite);
+
+}
+
+.wsus__profile_header_text .text .skills {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.wsus__profile_header_text .rating {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2470588235);
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wsus__profile_header_text .rating p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--colorWhite);
+}
+
+.wsus__profile_header_text .rating span {
+    color: var(--ratingColor);
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.wsus__profile_header_text .header_button {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.wsus__profile_header_text .header_button .common_btn {
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border-color: var(--colorWhite);
+    margin-right: 10px;
+    box-shadow: none;
+}
+
+.wsus__profile_header_text .header_button .logout {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: var(--colorWhite);
+    border-radius: 3px;
+    color: var(--paraColor);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.header_button li a:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/*============================
+    PROFILE OVERVIEW END
+============================*/
+
+
+/*============================
     START
 ============================*/
+
 /*============================
     END
 ============================*/
