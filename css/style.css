@@ -2124,13 +2124,14 @@ footer {
 }
 
 .wsus__sidebar_pro_info ul li {
-    color: var(--colorBlack);
     display: flex;
     justify-content: space-between;
     font-size: 18px;
     font-weight: 400;
     columns: var(--paraColor);
     margin-top: 20px;
+    text-transform: capitalize;
+    color: var(--paraColor);
 }
 
 .wsus__sidebar_pro_info ul li span {
@@ -3248,15 +3249,16 @@ footer {
 /*============================
     PROFILE OVERVIEW START
 ============================*/
-.wsus__profile_header {
+.wsus__profile_header {}
+
+.wsus__profile_header_text {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     padding: 65px 40px;
     position: relative;
-}
-
-.wsus__profile_header_text {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -3266,6 +3268,30 @@ footer {
     border: 8px solid var(--colorWhite);
     border-radius: 50%;
     margin-right: 30px;
+    position: relative;
+}
+
+.wsus__profile_header_text .img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__profile_header_text .img span {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: #00DE5E;
+    bottom: 18px;
+    right: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .wsus__profile_header_text .text {
@@ -3342,6 +3368,394 @@ footer {
 
 .header_button li a:hover {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.wsus__profile_header .header_menu {
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.wsus__profile_header .header_menu li {
+    width: 16.5%;
+    text-align: center;
+}
+
+.wsus__profile_header .header_menu li a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #6c798b;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    padding: 25px 0;
+}
+
+.wsus__profile_header .header_menu li a i {
+    margin-right: 5px;
+}
+
+.wsus__profile_header .header_menu li a:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__profile_header .header_menu li a.active {
+    color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.wsus__profile_overview {}
+
+.wsus__profile_overview h2 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 35px;
+}
+
+.wsus__profile_overview p {
+    margin-top: 30px;
+}
+
+.wsus__profile_overview .red_color {
+    color: var(--colorPrimary);
+    font-weight: 500;
+}
+
+.wsus__profile_overview .blue_color {
+    color: #1E6CFF;
+    font-weight: 600;
+}
+
+.wsus__profile_overview ul,
+.wsus__profile_overview ol {
+    margin-top: 35px;
+}
+
+.wsus__profile_overview ul li,
+.wsus__profile_overview ol li {
+    margin-left: 30px;
+    color: var(--colorBlack);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.wsus__profile_overview ul li::after,
+.wsus__profile_overview ol li::after {
+    position: absolute;
+    content: "";
+    background: url(../images/check_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -30px;
+}
+
+.wsus__profile_sidebar {
+    margin-top: 40px;
+}
+
+.wsus__profile_sedebar_item {
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.wsus__profile_sedebar_item h2 {
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile_sedebar_followers ul li {
+    border-right: 1px solid #d9d9d9;
+    width: 50%;
+}
+
+.profile_sedebar_followers ul li:last-child {
+    border-right: 0;
+}
+
+.profile_sedebar_followers ul li h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--colorPrimary);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.profile_sedebar_followers ul li p {
+    text-align: center;
+}
+
+.profile_sedebar_contact {
+    border: 1px solid #FACADF;
+}
+
+.profile_sedebar_contact form label {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.profile_sedebar_contact form input,
+.profile_sedebar_contact form textarea {
+    margin-bottom: 25px;
+}
+
+.profile_sedebar_contact form button {
+    width: 100%;
+}
+
+.profile_sedebar_social ul li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.profile_sedebar_social ul li a:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wsus__profile_download {
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 30px 40px;
+    background: var(--colorWhite);
+}
+
+.wsus__profile_download h2 {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.wsus__download_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.wsus__download_item:last-child {
+    border: none;
+    padding: 0;
+}
+
+.wsus__download_item_left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wsus__download_item_left .img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.wsus__download_item_left .text {
+    max-width: 250px;
+}
+
+.wsus__download_item_left .text a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--colorBlack);
+    margin-bottom: 8px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__download_item_left .text a:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__download_item_left .text p {
+    font-size: 14px;
+    color: #da126a;
+    margin-bottom: 12px;
+}
+
+.wsus__download_item_left .text h4 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.wsus__download_item_right {
+    text-align: right;
+}
+
+.wsus__download_item_right p {
+    color: var(--colorYellow);
+    font-size: 23px;
+    padding-top: 10px;
+    margin-right: 22px;
+}
+
+.wsus__profile_download_empty {
+    text-align: center;
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 30px 40px;
+    background: var(--colorWhite);
+}
+
+.wsus__profile_download_empty h2 {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.wsus__profile_download_empty .img {
+    width: 400px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.wsus__profile_download_empty h3 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 40px 0;
+}
+
+.wsus__profile_collection .wsus__gallery_item_img {
+    height: 180px;
+}
+
+.wsus__profile_settings {
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 30px 40px;
+    background: var(--colorWhite);
+}
+
+.wsus__profile_form_item {
+    margin-bottom: 22px;
+}
+
+.wsus__profile_form_item label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paraColor);
+    margin-bottom: 5px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.wsus__profile_form_item .nice-select {
+    border: 1px solid #e8e8e8 !important;
+    font-size: 14px;
+    height: 49px;
+    line-height: 49px;
+    padding-left: 20px;
+    margin-bottom: 23px;
+}
+
+.wsus__profile_form_item .nice-select .current {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.wsus__profile_form_item .nice-select:after {
+    right: 20px;
+}
+
+.wsus__profile_settings ul {
+    align-items: center;
+    justify-content: end;
+}
+
+.wsus__profile_settings ul li .cancel {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    margin-right: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__profile_settings ul li .cancel:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__profile_account_connect h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.wsus__profile_account_connect ul li {
+    text-align: center;
+    background: var(--colorWhite);
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all linear .3s;
+    width: 22%;
+    margin-top: 20px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__profile_account_connect ul li:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wsus__profile_account_connect ul li a {
+    padding: 8px 0px;
+    width: 100%;
+}
+
+.wsus__profile_account_connect ul li p {
+    padding-top: 7px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.wsus__profile_account_connect ul li .img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wsus__profile_account_connect ul li a.disconnect {
+    background: var(--colorBlack);
+}
+
+.wsus__profile_account_connect .disconnect:hover {
+    background: transparent;
+    color: var(--colorBlack);
+    border-color: var(--colorBlack);
 }
 
 /*============================
