@@ -14,7 +14,7 @@
   height: 42px;
   line-height: 40px;
   outline: none;
-  padding-left: 18px;
+  padding-left: 20px;
   padding-right: 30px;
   position: relative;
   text-align: left !important;
@@ -45,7 +45,7 @@
   font-size: 14px;
   color: #162B49;
   position: absolute;
-  right: 3px;
+  right: 20px;
   top: 0;
   transition: all linear .15s;
   -webkit-transition: all linear .15s;

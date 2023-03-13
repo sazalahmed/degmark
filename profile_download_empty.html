@@ -148,7 +148,8 @@
                                 </div>
                             </div>
                             <ul class="header_button">
-                                <li><a class="common_btn" href="#">edit profile</a></li>
+                                <li><a class="common_btn" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">edit profile</a></li>
                                 <li><a class="logout" href="#"><i class="fas fa-share"></i></a></li>
                             </ul>
                         </div>
@@ -162,8 +163,161 @@
                     </li>
                     <li><a href="profile_collection.html"><i class="far fa-folders"></i> Collection</a></li>
                     <li><a href="profile_rating.html"><i class="fas fa-star"></i> Item Rating </a></li>
-                    <li><a href="profile_settings.html"><i class="fas fa-cogs"></i> Settings</a></li>
                 </ul>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Your Profile</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="wsus__profile_settings">
+                                    <form>
+                                        <div class="wsus__profile_photo">
+                                            <p>Profile Update</p>
+                                            <label for="upload_photo">
+                                                <div class="img">
+                                                    <img src="images/upload_1.png" alt="upload" class="img-fluid w-100">
+                                                </div>
+                                                <span>Choose File</span>
+                                                to upload Profile
+                                            </label>
+                                            <input type="file" id="upload_photo" hidden>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Frist Name*</label>
+                                                    <input type="text" placeholder="Demo Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Last Name*</label>
+                                                    <input type="text" placeholder="Demo Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Email*</label>
+                                                    <input type="email" placeholder="email addresss here">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Phone*</label>
+                                                    <input type="text" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>country*</label>
+                                                    <select class="select_js">
+                                                        <option value="">select country</option>
+                                                        <option value="">bangladesh</option>
+                                                        <option value="">japan</option>
+                                                        <option value="">thailand</option>
+                                                        <option value="">korea</option>
+                                                        <option value="">vutan</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Town/City*</label>
+                                                    <select class="select_js">
+                                                        <option value="">select city</option>
+                                                        <option value="">dhaka</option>
+                                                        <option value="">barisal</option>
+                                                        <option value="">khulna</option>
+                                                        <option value="">sirajgonj</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>Adress*</label>
+                                                    <input type="text" placeholder="Adress">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>about me*</label>
+                                                    <textarea rows="7" placeholder="Write Here about me..."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>my skills*</label>
+                                                    <textarea rows="7"
+                                                        placeholder="Write Here about skills..."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>password*</label>
+                                                    <input type="passwoed" placeholder="*****">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="wsus__profile_form_item">
+                                                    <label>confirm password*</label>
+                                                    <input type="passwoed" placeholder="*****">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <ul class="d-flex flex-wrap">
+                                                    <li><button type="submit" class="cancel"
+                                                            data-bs-dismiss="modal">cancel</button></li>
+                                                    <li><button type="submit" class="common_btn">Save and change
+                                                        </button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="wsus__profile_account_connect pt_0">
+                                    <h2>Connect with</h2>
+                                    <ul class="d-flex flex-wrap justify-content-between">
+                                        <li>
+                                            <div class="img">
+                                                <img src="images/linkedin-lg.png" alt="logo" class="img-fluid w-100">
+                                            </div>
+                                            <p>Linkedin</p>
+                                            <a class="common_btn disconnect" href="#">Disconnect</a>
+                                        </li>
+                                        <li>
+                                            <div class="img">
+                                                <img src="images/pinterest-lg.png" alt="logo" class="img-fluid w-100">
+                                            </div>
+                                            <p>pinterest</p>
+                                            <a class="common_btn" href="#">Connect</a>
+                                        </li>
+                                        <li>
+                                            <div class="img">
+                                                <img src="images/twitter-lg.png" alt="logo" class="img-fluid w-100">
+                                            </div>
+                                            <p>twitter</p>
+                                            <a class="common_btn disconnect" href="#">Disconnect</a>
+                                        </li>
+                                        <li>
+                                            <div class="img">
+                                                <img src="images/dribble-lg.png" alt="logo" class="img-fluid w-100">
+                                            </div>
+                                            <p>dribble</p>
+                                            <a class="common_btn" href="#">connect</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-xl-8">

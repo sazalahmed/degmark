@@ -616,13 +616,14 @@ header .container,
     border: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    background: var(--colorWhite);
 }
 
 .wsus__banner_text form button {
     padding: 11.5px 30px;
     position: absolute;
-    top: 6px;
-    right: 7px;
+    top: 5px;
+    right: 6px;
 }
 
 .wsus__banner_text form button i {
@@ -1431,10 +1432,9 @@ footer {
     margin-top: 20px;
 }
 
-
 .wsus__team {
     background-position: center !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
@@ -1443,6 +1443,7 @@ footer {
     background: #fbecf3;
     border-radius: 4px;
     text-align: center;
+    margin: 0px 12px;
     margin-top: 25px;
 }
 
@@ -1718,7 +1719,6 @@ footer {
 }
 
 .wsus__product_details_text .nav {
-    justify-content: space-between;
     margin-top: 37px;
 }
 
@@ -1733,6 +1733,7 @@ footer {
     transition: all linear .2s;
     border-bottom: 2px solid transparent;
     border-radius: 0;
+    margin-right: 70px;
     padding-bottom: 5px;
     -webkit-transition: all linear .2s;
     -moz-transition: all linear .2s;
@@ -1943,9 +1944,10 @@ footer {
 
 .wsus__comment_input_area {
     background: var(--colorWhite);
-    box-shadow: 0px 4px 84px rgb(0 0 0 / 6%);
+    padding: 30px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    padding: 30px 30px 35px;
 }
 
 .wsus__comment_input_area h3 {
@@ -1977,6 +1979,10 @@ footer {
     border-radius: 8px;
     text-align: center;
     padding: 35px;
+}
+
+.wsus__sidebar_licence .nice-select:after {
+    right: 10px;
 }
 
 .select_licance {
@@ -2079,7 +2085,8 @@ footer {
 }
 
 .wsus__sidebar_buy_info,
-.wsus__sidebar_pro_info {
+.wsus__sidebar_pro_info,
+.wsus__sidebar_author_info {
     background: var(--colorWhite);
     box-shadow: 0px 4px 84px rgb(0 0 0 / 6%);
     border-radius: 8px;
@@ -2087,7 +2094,8 @@ footer {
 }
 
 .wsus__sidebar_buy_info h3,
-.wsus__sidebar_pro_info h3 {
+.wsus__sidebar_pro_info h3,
+.wsus__sidebar_author_info h3 {
     font-weight: 600;
     font-size: 24px;
     padding-bottom: 20px;
@@ -2161,6 +2169,55 @@ footer {
     background-color: #f8f8f8;
     margin-bottom: -245px;
 }
+
+.wsus__sidebar_author_text {
+    margin-bottom: 20px;
+}
+
+.wsus__sidebar_author_text .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.wsus__sidebar_author_text .text {
+    max-width: 215px;
+}
+
+.wsus__sidebar_author_text .text h4 {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.wsus__sidebar_author_text .text p {
+    font-size: 17px;
+}
+
+.wsus__sidebar_author_info a {
+    padding: 15px 20px;
+}
+
+.wsus__sidebar_author_info .view_profile {
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+}
+
+.wsus__sidebar_author_info .view_profile:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+
+
+
+
+
+
 
 /*============================
     PRODUCT DETAILS END
@@ -2283,37 +2340,7 @@ footer {
     padding: 13px 60px;
 }
 
-.wsus__cart_price_list ul li a {
-    padding: 13px 30px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-}
-
-.wsus__cart_price_list ul li .update_cart {
-    background: transparent;
-    color: var(--colorPrimary);
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-    border: 1px solid var(--colorPrimary);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -o-transition: all linear .3s;
-}
-
-.wsus__cart_price_list ul li .update_cart:hover {
-    background: var(--colorPrimary);
-    color: var(--colorWhite);
-}
-
-
 .wsus__cart_price_list .list_item {
-    margin-top: 20px;
     border: 1px solid #ededed;
     padding: 25px 30px 30px;
     text-align: center;
@@ -2429,21 +2456,25 @@ footer {
 }
 
 .wsus__checkout_text .nav {
-    border: 1px solid #d9d9d9;
-    border-radius: 0;
-    margin: 30px 30px 0px 30px;
+    /* border: 1px solid #d9d9d9; */
+    /* border-radius: 0; */
+    /* margin: 30px 30px 0px 30px; */
+    padding: 10px 30px 30px 30px;
+    justify-content: space-between;
 }
 
 .wsus__checkout_text .nav .nav-item {
-    width: 25%;
+    width: 23%;
 }
 
 .wsus__checkout_text .nav .nav-item .nav-link {
     width: 100%;
-    border-radius: 0;
-    border-right: 1px solid #d9d9d9;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
     padding: 20px;
+    margin-top: 20px;
     position: relative;
+    background: var(--colorWhite);
     transition: all linear 0s;
     -webkit-transition: all linear 0s;
     -moz-transition: all linear 0s;
@@ -2452,25 +2483,26 @@ footer {
 }
 
 .wsus__checkout_text .nav .nav-item:last-child .nav-link {
-    border-right: 0;
+    /* border-right: 0; */
 }
 
 .wsus__checkout_text .nav .nav-item .nav-link::before {
     position: absolute;
-    content: "";
+    content: "\f00c";
     width: 30px;
     height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-family: "font awesome 5 free";
+    font-weight: 600;
     background: #da126a;
     pointer-events: none;
-    bottom: 0;
-    left: 50%;
+    top: -7px;
+    right: -7px;
     z-index: 9;
-    transform: rotate(45deg) translateY(50%);
     opacity: 0;
-    -webkit-transform: rotate(45deg) translateY(50%);
-    -moz-transform: rotate(45deg) translateY(50%);
-    -ms-transform: rotate(45deg) translateY(50%);
-    -o-transform: rotate(45deg) translateY(50%);
     transition: all linear 0s;
     -webkit-transition: all linear 0s;
     -moz-transition: all linear 0s;
@@ -2479,7 +2511,7 @@ footer {
 }
 
 .wsus__checkout_text .nav .nav-item .nav-link.active {
-    background: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
 }
 
 .wsus__checkout_text .nav .nav-item .nav-link.active::before {
@@ -2487,7 +2519,7 @@ footer {
 }
 
 .wsus__checkout_footer {
-    padding: 0px 30px 30px 30px;
+    padding: 10px 30px 30px 30px;
     text-align: center;
 }
 
@@ -3247,10 +3279,8 @@ footer {
 
 
 /*============================
-    PROFILE OVERVIEW START
+    PROFILE START
 ============================*/
-.wsus__profile_header {}
-
 .wsus__profile_header_text {
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -3400,8 +3430,6 @@ footer {
     color: var(--colorPrimary);
     border-color: var(--colorPrimary);
 }
-
-.wsus__profile_overview {}
 
 .wsus__profile_overview h2 {
     font-weight: 600;
@@ -3644,9 +3672,7 @@ footer {
 }
 
 .wsus__profile_settings {
-    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    padding: 30px 40px;
+    padding: 30px;
     background: var(--colorWhite);
 }
 
@@ -3691,6 +3717,7 @@ footer {
     font-size: 18px;
     color: var(--colorPrimary);
     text-transform: capitalize;
+    background: none;
     margin-right: 20px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -3758,8 +3785,578 @@ footer {
     border-color: var(--colorBlack);
 }
 
+.wsus__profile .modal {
+    background: #162b49ba;
+}
+
+.wsus__profile .modal-header {
+    background: var(--colorBlack);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.wsus__profile .modal-header .modal-title {
+    font-weight: 600;
+    font-size: 20px !important;
+    color: var(--colorWhite);
+}
+
+.wsus__profile .modal-body {
+    padding: 0;
+}
+
+.wsus__profile .modal-dialog {
+    max-width: 900px;
+}
+
+.wsus__profile_account_connect {
+    padding: 30px;
+}
+
+.wsus__profile_photo p {
+    margin-bottom: 5px;
+}
+
+.wsus__profile_photo label {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FDF9FC;
+    border: 1px solid #E8E8E8;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.wsus__profile_photo label .img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.wsus__profile_photo label span {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0049FF;
+    margin-top: 15px;
+}
+
 /*============================
-    PROFILE OVERVIEW END
+    PROFILE END
+============================*/
+
+
+/*============================
+    BECOME AUTHOR START
+============================*/
+.wsus__author_header {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 90px 40px;
+    text-align: center;
+}
+
+.wsus__author_header h1 {
+    font-size: 58px;
+    margin-bottom: 40px;
+    color: var(--colorWhite);
+    font-weight: 700;
+}
+
+.wsus__author_header a {
+    background: var(--colorWhite) !important;
+    color: var(--colorPrimary) !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+.wsus__author_header a:hover {
+    box-shadow: 0 5px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.wsus__author_benefits_area {
+    background: #f8f8f8;
+    margin-top: -220px;
+}
+
+.wsus__author_benefits {
+    background: var(--colorWhite);
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px 25px;
+    margin-top: 30px;
+    transition: 250ms ease;
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -ms-transition: 250ms ease;
+    -o-transition: 250ms ease;
+}
+
+.wsus__author_benefits .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.wsus__author_benefits h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.wsus__author_benefits:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.author_categories {
+    margin-bottom: -245px;
+}
+
+.author_categories .wsus__categories_item {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*============================
+    BECOME AUTHOR END
+============================*/
+
+
+/*============================
+    UPLOAD PRODUCT START
+============================*/
+.upload_product {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin-bottom: -250px;
+}
+
+.upload_product_text {
+    padding: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+}
+
+.upload_product_text h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--colorBlack);
+}
+
+.upload_product_text h6 {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--colorPrimary);
+    margin: 12px 0px 25px 0px;
+}
+
+.upload_form_input .nice-select,
+.upload_product_text .nice-select {
+    width: 100%;
+    background: #F2F2F2;
+    border: 1px solid #BFBFBF;
+    border-radius: 4px;
+    color: #162B49;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    height: 55px;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+.upload_product_text h5 {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--colorBlack);
+}
+
+.upload_product_text p {
+    font-weight: 400;
+    font-size: 16px;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 10px 0px 20px 0px;
+    padding-bottom: 15px;
+}
+
+.upload_product_text ul li .cancel {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    color: #EB5757;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.upload_product_text ul li .cancel:hover {
+    color: #162B49;
+}
+
+.upload_product_text ul li .next {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #DA126A;
+    border-radius: 4px;
+    text-transform: capitalize;
+    padding: 10px 40px;
+    margin-left: 30px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.upload_product_text ul li .next:hover {
+    background: #162B49;
+}
+
+.upload_product_img {
+    height: 490px;
+}
+
+/*============================
+    UPLOAD PRODUCT END
+============================*/
+
+
+/*============================
+    UPLOAD PRODUCT INFO START
+============================*/
+.upload_product_info {
+    background: rgb(22, 43, 73);
+    background: linear-gradient(0deg, rgba(22, 43, 73, 0) 0%, rgb(22 43 73 / 5%) 100%);
+}
+
+.upload_product_info h3 {
+    background: var(--colorBlack);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--colorWhite);
+    padding: 20px 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.upload_product_form {
+    padding: 10px 30px 30px 30px;
+    background: #fff;
+    border: 1px solid #eeeeee96;
+}
+
+.upload_form_input label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--paraColor);
+}
+
+.upload_form_input label span {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--colorBlack);
+    margin-left: 10px;
+}
+
+.upload_form_input label span b {
+    font-weight: 400;
+    color: var(--colorPrimary);
+}
+
+.upload_form_input input,
+.upload_form_input textarea {
+    background: #FDF9FC;
+    border: 1px solid #E8E8E8;
+    width: 100%;
+    padding: 17px 20px;
+    outline: none;
+    resize: none;
+}
+
+.upload_box {
+    text-align: center;
+    background: #FDF9FC;
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    padding: 40px;
+}
+
+.upload_box label {
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--colorBlack);
+    cursor: pointer;
+}
+
+.upload_box label span {
+    color: #0049FF;
+    font-size: 18px;
+    margin-left: 0px;
+}
+
+.upload_box .img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.upload_form_input .nice-select {
+    background: #FDF9FC;
+    border: 1px solid #E8E8E8;
+    border-radius: 4;
+    margin: 0;
+}
+
+.upload_form_input {
+    margin-top: 20px;
+}
+
+.upload_form_input ul li button {
+    color: var(--colorWhite) !important;
+    border: none;
+    box-shadow: none;
+}
+
+.upload_form_input .upload {
+    background: #27AE60;
+    margin-right: 20px;
+}
+
+.upload_form_input .delete {
+    background: #EB5757;
+}
+
+.upload_form_input ul li button:hover {
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*============================
+    UPLOAD PRODUCT INFO END
+============================*/
+
+
+/*============================
+ UPLOAD PRODUCT DONE START
+============================*/
+.upload_product_done {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.upload_product_done_text .img {
+    height: 415px;
+}
+
+.upload_product_done_text h2 {
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: capitalize;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.upload_product_done_text p {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.upload_product_done_text a {
+    margin-bottom: -5px;
+}
+
+/*============================
+ UPLOAD PRODUCT DONE END
+============================*/
+
+
+/*============================
+    LOGIN START
+============================*/
+.wsus__login {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin-bottom: -245px;
+}
+
+.wsus__login_area {
+    border: 1px solid #E0E0E0;
+    background: var(--colorWhite);
+}
+
+.wsus__login_area h2 {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    padding: 20px 0px 22px 0px;
+}
+
+.wsus__login_area form {
+    padding: 30px 40px;
+}
+
+.wsus__login_inpu_area {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.wsus__login_inpu_area label {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--paraColor);
+    margin-bottom: 8px;
+}
+
+.wsus__login_inpu_area .eye {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.wsus__login_inpu_area input {
+    border-radius: 0;
+}
+
+.wsus__login_inpu_area .form-check {
+    margin: 0;
+}
+
+.wsus__login_inpu_area .form-check input {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.wsus__login_inpu_area .form-check label {
+    color: var(--colorBlack);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.wsus__login_inpu_area .form-check a {
+    color: var(--colorPrimary);
+    float: right;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__login_inpu_area .form-check a:hover {
+    color: var(--colorBlack);
+}
+
+.wsus__login_area button {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 40px;
+    border-radius: 0;
+    margin-bottom: 15px;
+    box-shadow: none;
+}
+
+.wsus__login_inpu_area ul {}
+
+.wsus__login_inpu_area ul li {}
+
+.wsus__login_inpu_area ul li a {
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+    border: 1px solid rgba(83, 86, 251, 0.16);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--paraColor);
+    padding: 15px 0px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__login_inpu_area ul li a span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.wsus__login_inpu_area ul li a:hover {
+    color: var(--colorPrimary);
+}
+
+.wsus__login_inpu_area .form-check-input:focus {
+    border-color: var(--colorPrimary);
+    box-shadow: none;
+}
+
+.wsus__login_inpu_area .form-check-input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+
+.wsus__login_area .go_login {
+    text-align: center;
+}
+
+.wsus__login_area .go_login a {
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__login_area .go_login a:hover {
+    color: var(--colorPrimary);
+}
+
+/*============================
+    LOGIN END
 ============================*/
 
 
