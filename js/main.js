@@ -129,13 +129,29 @@ $(function () {
     })
 
 
-    //========= summer note js =========
+    //=====SUMMER NOTE JS=======
     $(document).ready(function () {
         $('.summer_note').summernote();
     });
 
 
+    //=====WOW JS=======
+    new WOW().init();
+
+    //=====percircle js=====
+    $("[id$='circle']").percircle();
 
 
 
-});
+
+
+
+
+
+
+
+
+
+
+
+}); 

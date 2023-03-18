@@ -116,7 +116,7 @@
 
 .nice-select .list {
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
   box-sizing: border-box;
   margin-top: 4px;
@@ -137,6 +137,23 @@
   transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
   z-index: 9;
   width: 100%;
+  max-height: 350px;
+  overflow-y: auto;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.nice-select .list::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+.nice-select .list::-webkit-scrollbar {
+  scrollbar-width: thin !important;
+  background: #fff;
+  height: 4px;
+  width: 4px;
 }
 
 .nice-select .list:hover .option:not(:hover) {
