@@ -65,7 +65,6 @@ $(function () {
     });
 
 
-
     //=======TESTI SLIDER======
     $('.testi_slider').slick({
         slidesToShow: 2,
@@ -138,20 +137,52 @@ $(function () {
     //=====WOW JS=======
     new WOW().init();
 
+
     //=====percircle js=====
     $("[id$='circle']").percircle();
 
 
+    // =====testimonial 3 slider=====
+    $('.wsus__testi_slider_top').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: false,
+        fade: false,
+        asNavFor: '.wsus__testi_slider_bottom'
+    });
+
+    $('.wsus__testi_slider_bottom').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        asNavFor: '.wsus__testi_slider_top',
+        autoplay: false,
+        autoplaySpeed: 4000,
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true
+    });
 
 
+    //*=======SCROLL BUTTON=======  
+    $('.wsus__scroll_btn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0,
+        }, 400);
+    });
 
+    $(window).on('scroll', function () {
+        var scrolling = $(this).scrollTop();
 
-
-
-
-
-
-
+        if (scrolling > 300) {
+            $('.wsus__scroll_btn').fadeIn();
+        } else {
+            $('.wsus__scroll_btn').fadeOut();
+        }
+    });
 
 
 }); 
