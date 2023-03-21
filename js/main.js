@@ -185,4 +185,9 @@ $(function () {
     });
 
 
+    //=======MOBILE MENU ICON======
+    $(".navbar-toggler").on("click", function () {
+        $(".navbar-toggler").toggleClass("show_close_icon");
+    });
+
 }); 

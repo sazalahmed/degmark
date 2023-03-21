@@ -310,6 +310,10 @@ button {
     color: var(--colorWhite);
 }
 
+.wsus__breadcrumb .bg_animation li {
+    z-index: 1;
+}
+
 .breadcrumb_animi li:nth-child(1) {
     width: 110px !important;
     height: 110px !important;
@@ -409,7 +413,6 @@ header {
 
 .wsus__header_content ul li a {
     color: var(--colorBlack);
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
     margin-right: 30px;
@@ -503,6 +506,7 @@ header .container,
     -o-transition: all linear .3s;
     max-height: 450px;
     overflow-y: auto;
+    z-index: 99;
 }
 
 .main_menu .wsus__droap_menu::-webkit-scrollbar-thumb {
@@ -1052,6 +1056,7 @@ header .container,
     background: #f6e8f3;
     border-radius: 50%;
     text-align: center;
+    overflow: hidden;
     transition: 0.2s ease;
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
@@ -1204,15 +1209,14 @@ header .container,
     padding-right: 60px;
 }
 
-.wsus__download_text h2 {
+.wsus__download_text h2,
+.wsus__download_text h2 span {
     font-size: 42px;
     font-weight: 700;
     color: var(--colorWhite);
 }
 
 .wsus__download_text h2 span {
-    font-size: 42px;
-    font-weight: 700;
     color: var(--colorPrimary);
 }
 
@@ -1493,26 +1497,27 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .8;
+    z-index: -1;
 }
 
 .bg_animation li:nth-child(1) {
     width: 360px;
     height: 360px;
-    left: -2%;
+    left: -7%;
     bottom: -2%;
 }
 
 .bg_animation li:nth-child(2) {
     width: 160px;
     height: 160px;
-    left: 15%;
-    bottom: 6px;
+    left: 14%;
+    bottom: -10px;
 }
 
 .bg_animation li:nth-child(3) {
     width: 245px;
     height: 245px;
-    left: 21%;
+    left: 20%;
     bottom: 6%;
 }
 
@@ -1527,13 +1532,13 @@ footer {
     width: 140px;
     height: 140px;
     left: 30%;
-    bottom: 37%;
+    bottom: 35%;
 }
 
 .bg_animation li:nth-child(6) {
     width: 190px;
     height: 190px;
-    left: 23%;
+    left: 24%;
     bottom: 50%;
 }
 
@@ -1547,7 +1552,7 @@ footer {
 .bg_animation li:nth-child(8) {
     width: 250px;
     height: 250px;
-    left: 6%;
+    left: 5%;
     top: 9%;
 }
 
@@ -1561,14 +1566,14 @@ footer {
 .bg_animation li:nth-child(10) {
     width: 60px;
     height: 60px;
-    left: 37%;
+    left: 40%;
     top: 32%;
 }
 
 .bg_animation li:nth-child(11) {
     width: 144px;
     height: 144px;
-    left: 32%;
+    left: 33%;
     top: 5%;
 }
 
@@ -1583,7 +1588,7 @@ footer {
     width: 100px;
     height: 100px;
     top: 9%;
-    left: 19%;
+    left: 20%;
 }
 
 .bg_animation_r li {
@@ -1596,68 +1601,68 @@ footer {
 }
 
 .bg_animation_r li:nth-child(1) {
-    right: -2%;
-    left: auto;
+    right: -7%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(2) {
-    right: 15%;
-    left: auto;
+    right: 14%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(3) {
-    right: 21%;
-    left: auto;
+    right: 20%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(4) {
     right: 30%;
-    left: auto;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(5) {
     right: 30%;
-    left: auto;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(6) {
-    right: 23%;
-    left: auto;
+    right: 24%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(7) {
     right: 0;
-    left: auto;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(8) {
-    right: 6%;
-    left: auto;
+    right: 5%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(9) {
     right: 15%;
-    left: auto;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(10) {
-    right: 37%;
-    left: auto;
+    right: 40%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(11) {
-    right: 32%;
-    left: auto;
+    right: 33%;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(12) {
     right: 24%;
-    left: auto;
+    left: auto !important;
 }
 
 .bg_animation_r li:nth-child(13) {
-    right: 19%;
-    left: auto;
+    right: 20%;
+    left: auto !important;
 }
 
 /* background animation end */
@@ -1726,7 +1731,8 @@ footer {
     align-items: start;
 }
 
-.wsus__about_text h2 {
+.wsus__about_text h2,
+.wsus__about_text h2 span {
     font-weight: 700;
     font-size: 42px;
     text-transform: capitalize;
@@ -1734,10 +1740,7 @@ footer {
 }
 
 .wsus__about_text h2 span {
-    font-weight: 700;
-    font-size: 42px;
     color: var(--colorPrimary);
-    text-transform: capitalize;
 }
 
 .wsus__about_text p {
@@ -4327,6 +4330,7 @@ footer {
     width: 40px;
     height: 40px;
     overflow: hidden;
+    display: block;
 }
 
 .wsus__profile_photo label span {
@@ -4726,8 +4730,12 @@ footer {
 .upload_form_input .nice-select {
     background: #FDF9FC;
     border: 1px solid #E8E8E8;
-    border-radius: 4;
+    border-radius: 4px;
     margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .upload_form_input {
@@ -5433,7 +5441,7 @@ footer {
 }
 
 .wsus__offer_text a:hover {
-    color: var(--colorBlack) !important;
+    color: var(--colorWhite) !important;
     border-color: var(--colorWhite);
 }
 
