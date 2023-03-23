@@ -1497,7 +1497,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .8;
-    z-index: -1;
+    z-index: 1;
 }
 
 .bg_animation li:nth-child(1) {
@@ -3622,7 +3622,7 @@ footer {
     border-radius: 50%;
     margin-right: 30px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wsus__profile_header_text .img img {
@@ -3651,7 +3651,7 @@ footer {
 .wsus__profile_header_text .text {
     max-width: 60%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wsus__profile_header_text .text h2 {
@@ -3697,7 +3697,7 @@ footer {
     right: 40px;
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 
 .wsus__profile_header_text .header_button .common_btn {
