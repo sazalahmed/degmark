@@ -1,3 +1,68 @@
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+    /* =======================
+        ABOUT US PAGE START
+    ======================== */
+    .breadcrumb_animi li:nth-child(2) {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .breadcrumb_animi li:nth-child(3) {
+        width: 180px !important;
+        height: 180px !important;
+        bottom: 12% !important;
+        left: 8% !important;
+    }
+
+    .breadcrumb_animi li:nth-child(6) {
+        width: 100px !important;
+        height: 100px !important;
+        bottom: 64% !important;
+    }
+
+    .breadcrumb_animi li:nth-child(1) {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .breadcrumb_animi li:nth-child(4) {
+        width: 150px !important;
+        height: 150px !important;
+        left: 25% !important;
+        bottom: 17% !important;
+        display: block !important;
+    }
+
+    .breadcrumb_animi li:nth-child(5) {
+        width: 120px !important;
+        height: 120px !important;
+        bottom: -15% !important;
+        left: 18% !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(4) {
+        right: 25% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(3) {
+        right: 8% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(5) {
+        right: 18% !important;
+        left: auto !important;
+    }
+
+    /* =======================
+        ABOUT US PAGE END
+    ======================== */
+}
+
+
+
 @media (min-width: 1200px) and (max-width: 1399.99px) {
 
     /* =======================
@@ -107,6 +172,210 @@
     /* =======================
         HOME PAGE END
     ======================== */
+
+    /* =======================
+        ABOUT US PAGE START
+    ======================== */
+    .breadcrumb_animi li:nth-child(2) {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .breadcrumb_animi li:nth-child(3) {
+        width: 140px !important;
+        height: 140px !important;
+        bottom: 20% !important;
+    }
+
+    .breadcrumb_animi li:nth-child(6) {
+        width: 100px !important;
+        height: 100px !important;
+        bottom: 64% !important;
+    }
+
+    .breadcrumb_animi li:nth-child(1) {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .breadcrumb_animi li:nth-child(4) {
+        width: 150px !important;
+        height: 150px !important;
+        left: 25% !important;
+        bottom: 17% !important;
+        display: block !important;
+    }
+
+    .breadcrumb_animi li:nth-child(5) {
+        width: 120px !important;
+        height: 120px !important;
+        bottom: -15% !important;
+        left: 18% !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(4) {
+        right: 25% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(5) {
+        right: 18% !important;
+        left: auto !important;
+    }
+
+    .wsus__breadcrumb {
+        margin-top: 100px;
+    }
+
+    .wsus__about_img {
+        width: 440px;
+        height: 440px;
+    }
+
+    .wsus__about_text h2,
+    .wsus__about_text h2 span {
+        font-size: 38px;
+    }
+
+    /* =======================
+        ABOUT US PAGE END
+    ======================== */
+
+
+    /* =======================
+        BECOME AUTHOR START
+    ======================== */
+
+    .author_bg_animi li:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        left: 0;
+    }
+
+    .author_bg_animi li:nth-child(8) {
+        width: 120px;
+        height: 120px;
+        left: -5%;
+        top: 25%;
+    }
+
+    .author_bg_animi li:nth-child(6) {
+        width: 120px;
+        height: 120px;
+        left: 17%;
+        bottom: 55%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(6) {
+        right: 20%;
+        left: auto;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(8) {
+        right: -5%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(4) {
+        width: 180px;
+        height: 180px;
+        bottom: 25% !important;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(5) {
+        right: 40%;
+        bottom: 80%;
+    }
+
+    .author_bg_animi .bg_animation li:nth-child(4) {
+        bottom: 25%;
+        left: 5%;
+    }
+
+    .author_bg_animi li:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        left: 17%;
+        bottom: -25px;
+    }
+
+    .author_bg_animi li:nth-child(5) {
+        bottom: 65%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(1) {
+        right: 0;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(2) {
+        right: 17%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(4) {
+        right: 5% !important;
+    }
+
+    .wsus__single_team_img {
+        height: 330px;
+    }
+
+    /* =======================
+        BECOME AUTHOR END
+    ======================== */
+
+    /* =======================
+        BLOG DETAILS START  
+    ======================== */
+    .wsus__blog_details_img {
+        height: 460px;
+    }
+
+    .wsus__blog_center_img {
+        height: 240px;
+    }
+
+    .comment_footer .text {
+        width: 88%;
+    }
+
+    .wsus__single_comment.reply .text {
+        width: 89%;
+    }
+
+    .wsus__single_comment.reply {
+        margin-left: 80px;
+    }
+
+    .wsus__sidebar_blog ul li .text {
+        width: 66%;
+    }
+
+    /* =======================
+        BLOG DETAILS END
+    ======================== */
+
+    .wsus__cart_empty_text .img {
+        height: 420px;
+    }
+
+    /* =======================
+        CHECKOUT START
+    ======================== */
+    .wsus__checkout_text h3 {
+        font-size: 15px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 30%;
+    }
+
+    .wsus__checkout_sidebar ul li .text {
+        width: 60%;
+    }
+
+    /* =======================
+        CHECKOUT END
+    ======================== */
+
 
 
 }
@@ -256,38 +525,51 @@
         ABOUT US PAGE START
     ======================== */
     .breadcrumb_animi li:nth-child(2) {
-        width: 80px !important;
-        height: 80px !important;
+        width: 120px !important;
+        height: 120px !important;
     }
 
     .breadcrumb_animi li:nth-child(3) {
-        width: 70px !important;
-        height: 70px !important;
+        width: 100px !important;
+        height: 100px !important;
         bottom: 38% !important;
     }
 
     .breadcrumb_animi li:nth-child(6) {
-        width: 55px !important;
-        height: 55px !important;
+        width: 80px !important;
+        height: 80px !important;
         left: 25%;
         bottom: 64% !important;
     }
 
     .breadcrumb_animi li:nth-child(1) {
-        width: 90px !important;
-        height: 90px !important;
+        width: 130px !important;
+        height: 130px !important;
     }
 
     .breadcrumb_animi li:nth-child(4) {
-        width: 80px !important;
-        height: 80px !important;
+        width: 110px !important;
+        height: 110px !important;
         left: 25% !important;
-        bottom: 32% !important;
+        bottom: 25% !important;
         display: block !important;
     }
 
-    .wsus__breadcrumb {
-        margin-top: 100px;
+    .breadcrumb_animi li:nth-child(5) {
+        width: 150px !important;
+        height: 150px !important;
+        left: 14% !important;
+        bottom: -20% !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(5) {
+        right: 14% !important;
+        left: auto !important;
+    }
+
+    .bg_animation_r li:nth-child(4) {
+        right: 25% !important;
+        left: auto !important;
     }
 
     .wsus__about_img {
@@ -303,6 +585,170 @@
     /* =======================
         ABOUT US PAGE END
     ======================== */
+
+
+    /* =======================
+        BECOME AUTHOR START
+    ======================== */
+
+    .author_bg_animi li:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        left: 0;
+    }
+
+    .author_bg_animi li:nth-child(8) {
+        width: 120px;
+        height: 120px;
+        left: -5%;
+        top: 25%;
+    }
+
+    .author_bg_animi li:nth-child(6) {
+        width: 120px;
+        height: 120px;
+        left: 17%;
+        bottom: 55%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(6) {
+        right: 20%;
+        left: auto;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(8) {
+        right: -5%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(4) {
+        width: 180px;
+        height: 180px;
+        bottom: 25% !important;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(5) {
+        right: 40%;
+        bottom: 80%;
+    }
+
+    .author_bg_animi .bg_animation li:nth-child(4) {
+        bottom: 25%;
+        left: 5%;
+    }
+
+    .author_categories .wsus__categories_item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .wsus__categories_item .icon {
+        margin-top: 15px;
+    }
+
+    .wsus__categories_item h3 {
+        margin-top: 20px;
+    }
+
+    .author_bg_animi li:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        left: 17%;
+        bottom: -25px;
+    }
+
+    .author_bg_animi li:nth-child(5) {
+        bottom: 65%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(1) {
+        right: 0;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(2) {
+        right: 17%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(4) {
+        right: 5% !important;
+    }
+
+    /* =======================
+        BECOME AUTHOR END
+    ======================== */
+
+
+    /* =======================
+        BLOG DETAILS START  
+    ======================== */
+    .wsus__blog_details_img {
+        height: 380px;
+    }
+
+    .wsus__blog_center_img {
+        height: 240px;
+    }
+
+    .comment_footer .text {
+        width: 88%;
+    }
+
+    .wsus__single_comment.reply .text {
+        width: 86.7%;
+    }
+
+    .wsus__single_comment.reply {
+        margin-left: 60px;
+    }
+
+    .wsus__sidebar_blog ul li .text {
+        width: 60%;
+    }
+
+    .wsus__sidebar_item {
+        padding: 20px;
+    }
+
+    .wsus__sidebar_blog ul li .text a {
+        font-size: 16px;
+    }
+
+    /* =======================
+        BLOG DETAILS END
+    ======================== */
+
+    .wsus__cart_empty_text .img {
+        height: 496px;
+    }
+
+    /* =======================
+        CART VIEW START
+    ======================== */
+    .wsus__cart_coupone button {
+        padding: 12px 40px;
+    }
+
+    /* =======================
+        CART VIEW END
+    ======================== */
+
+
+    /* =======================
+        CHECKOUT START
+    ======================== */
+    .wsus__checkout_text .nav .nav-item {
+        width: 30%;
+    }
+
+    .wsus__checkout_sidebar ul li .text {
+        width: 62%;
+    }
+
+    /* =======================
+        CHECKOUT END
+    ======================== */
+
+
+
 }
 
 
@@ -323,6 +769,7 @@
 
     .main_menu {
         height: 60px;
+        border-bottom: 1px solid #eee;
     }
 
     .navbar-brand {
@@ -624,34 +1071,61 @@
         ABOUT US PAGE START
     ======================== */
     .breadcrumb_animi li:nth-child(2) {
-        width: 80px !important;
-        height: 80px !important;
+        width: 100px !important;
+        height: 100px !important;
     }
 
     .breadcrumb_animi li:nth-child(3) {
-        width: 70px !important;
-        height: 70px !important;
-        bottom: 38% !important;
+        width: 110px !important;
+        height: 110px !important;
+        bottom: 25% !important;
+        left: 7% !important;
     }
 
     .breadcrumb_animi li:nth-child(6) {
-        width: 55px !important;
-        height: 55px !important;
-        left: 25%;
+        width: 80px !important;
+        height: 80px !important;
+        left: 17% !important;
         bottom: 64% !important;
     }
 
     .breadcrumb_animi li:nth-child(1) {
-        width: 90px !important;
-        height: 90px !important;
+        width: 110px !important;
+        height: 110px !important;
     }
 
     .breadcrumb_animi li:nth-child(4) {
-        width: 80px !important;
-        height: 80px !important;
+        width: 100px !important;
+        height: 100px !important;
         left: 25% !important;
         bottom: 32% !important;
         display: block !important;
+    }
+
+    .breadcrumb_animi li:nth-child(5) {
+        width: 90px !important;
+        height: 90px !important;
+        bottom: 0 !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(5) {
+        right: 18% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(3) {
+        right: 7% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(6) {
+        right: 20% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(4) {
+        right: 27% !important;
+        left: auto !important;
     }
 
     .wsus__breadcrumb {
@@ -674,7 +1148,7 @@
     }
 
     .wsus__single_team_img {
-        height: 350px;
+        height: 310px;
     }
 
     .wsus__single_team_text h4 {
@@ -685,6 +1159,156 @@
         ABOUT US PAGE END
     ======================== */
 
+
+    /* =======================
+        BECOME AUTHOR START
+    ======================== */
+
+    .author_bg_animi li:nth-child(1) {
+        width: 150px;
+        height: 150px;
+    }
+
+    .author_bg_animi li:nth-child(8) {
+        width: 120px;
+        height: 120px;
+        left: -5%;
+        top: 21%;
+    }
+
+    .author_bg_animi li:nth-child(6) {
+        width: 120px;
+        height: 120px;
+        left: 20%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(6) {
+        right: 20%;
+        left: auto;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(8) {
+        right: -5%;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(4) {
+        width: 180px;
+        height: 180px;
+        bottom: 25% !important;
+    }
+
+    .author_bg_animi .bg_animation_r li:nth-child(5) {
+        right: 40%;
+        bottom: 80%;
+    }
+
+    .author_bg_animi .bg_animation li:nth-child(4) {
+        bottom: 17%;
+    }
+
+    .author_categories .wsus__categories_item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .wsus__categories_item h3 {
+        margin-top: 20px;
+    }
+
+    /* =======================
+        BECOME AUTHOR END
+    ======================== */
+
+
+    /* =======================
+        BLOG DETAILS START  
+    ======================== */
+    .wsus__blog_details_img {
+        height: 380px;
+    }
+
+    .wsus__blog_center_img {
+        height: 300px;
+        margin-bottom: 25px;
+    }
+
+    .wsus__single_comment.reply {
+        margin-left: 60px;
+    }
+
+    .wsus__sidebar_blog ul li .text {
+        width: 84%;
+    }
+
+    .wsus__comment_list {
+        margin-bottom: 25px;
+    }
+
+    .comment_footer .text {
+        width: 89.7%;
+    }
+
+    .wsus__single_comment.reply .text {
+        width: 88%;
+    }
+
+    /* =======================
+        BLOG DETAILS END
+    ======================== */
+
+
+    /* =======================
+        EMPTY CART START
+    ======================== */
+    .wsus__cart_empty_text .img {
+        height: 371px;
+        width: 400px;
+        margin: auto;
+    }
+
+    /* =======================
+        EMPTY CART END
+    ======================== */
+
+
+    /* =======================
+        CART VIEW START
+    ======================== */
+    .wsus__cart_price_list {
+        margin-top: 25px;
+    }
+
+    .wsus__cart_coupone button {
+        padding: 12px 40px;
+    }
+
+    /* =======================
+        CART VIEW END
+    ======================== */
+
+
+    /* =======================
+        CHECKOUT START
+    ======================== */
+    .wsus__checkout_text h3 {
+        font-size: 15px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 30%;
+    }
+
+    .wsus__checkout_sidebar ul li .text {
+        width: 79%;
+    }
+
+    .wsus__checkout_text {
+        margin-bottom: 25px;
+    }
+
+    /* =======================
+        CHECKOUT END
+    ======================== */
 
 }
 
@@ -712,8 +1336,8 @@
     }
 
     .main_menu {
-        /* top: 70px; */
         height: 60px;
+        border-bottom: 1px solid #eee;
     }
 
     .navbar-brand {
@@ -992,34 +1616,44 @@
         ABOUT US PAGE START
     ======================== */
     .breadcrumb_animi li:nth-child(2) {
-        width: 80px !important;
-        height: 80px !important;
+        width: 100px !important;
+        height: 100px !important;
     }
 
     .breadcrumb_animi li:nth-child(3) {
-        width: 70px !important;
-        height: 70px !important;
-        bottom: 38% !important;
+        width: 100px !important;
+        height: 100px !important;
+        bottom: 30% !important;
     }
 
     .breadcrumb_animi li:nth-child(6) {
-        width: 55px !important;
-        height: 55px !important;
-        left: 25%;
+        width: 80px !important;
+        height: 80px !important;
         bottom: 64% !important;
     }
 
     .breadcrumb_animi li:nth-child(1) {
-        width: 90px !important;
-        height: 90px !important;
+        width: 110px !important;
+        height: 110px !important;
     }
 
     .breadcrumb_animi li:nth-child(4) {
-        width: 80px !important;
-        height: 80px !important;
-        left: 25% !important;
+        width: 70px !important;
+        height: 70px !important;
+        left: 27% !important;
         bottom: 32% !important;
         display: block !important;
+    }
+
+    .breadcrumb_animi li:nth-child(5) {
+        width: 80px !important;
+        height: 80px !important;
+        bottom: -5% !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(4) {
+        right: 27% !important;
+        left: auto !important;
     }
 
     .wsus__breadcrumb {
@@ -1041,16 +1675,197 @@
         margin-top: 30px;
     }
 
-    .wsus__single_team_img {
-        height: 500px;
-    }
-
     .wsus__single_team_text h4 {
         font-size: 18px;
     }
 
     /* =======================
         ABOUT US PAGE END
+    ======================== */
+
+    /* =======================
+        BECOME AUTHOR START
+    ======================== */
+    .wsus__author_header {
+        padding: 35px;
+    }
+
+    .wsus__author_header h1 {
+        font-size: 35px;
+    }
+
+    .wsus__author_header a {
+        padding: 15px 28px;
+    }
+
+    .author_bg_animi .bg_animation_r {
+        display: none;
+    }
+
+    .author_bg_animi .bg_animation li:nth-child(7) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .author_bg_animi li:nth-child(1) {
+        width: 170px;
+        height: 170px;
+        left: 0;
+        bottom: -40px;
+    }
+
+    .author_bg_animi li:nth-child(2) {
+        width: 130px;
+        height: 130px;
+        left: 30%;
+        bottom: 30%;
+    }
+
+    .author_bg_animi li:nth-child(5) {
+        bottom: 50%;
+        left: 70%;
+    }
+
+    .author_bg_animi li:nth-child(6) {
+        width: 115px;
+        height: 115px;
+        left: 45%;
+        bottom: 77%;
+    }
+
+    .author_bg_animi li:nth-child(8) {
+        width: 90px;
+        height: 90px;
+        left: -5%;
+        top: 30%;
+    }
+
+    .author_bg_animi li:nth-child(3) {
+        width: 140px;
+        height: 140px;
+        left: 60%;
+        bottom: 0;
+    }
+
+    .wsus__categories_item .icon {
+        margin-top: 0px;
+    }
+
+    /* =======================
+        BECOME AUTHOR END
+    ======================== */
+
+
+    /* =======================
+        BLOG DETAILS START  
+    ======================== */
+    .wsus__blog_details_img {
+        height: 300px;
+    }
+
+    .wsus__blog_center_img {
+        height: 300px;
+        margin-bottom: 25px;
+    }
+
+    .wsus__blog_tags_and_share .tags {
+        margin-bottom: 20px;
+    }
+
+    .wsus__single_comment.reply .text {
+        width: 84.3%;
+    }
+
+    .wsus__single_comment.reply {
+        margin-left: 40px;
+    }
+
+    .wsus__sidebar_blog ul li .text {
+        width: 78%;
+    }
+
+    .wsus__sidebar_tags ul li a {
+        padding: 10px 25px;
+    }
+
+    .wsus__comment_list {
+        margin-bottom: 25px;
+    }
+
+    .comment_footer .text {
+        width: 85.7%;
+    }
+
+    .wsus__pagination nav ul li .prev,
+    .wsus__pagination nav ul li .next {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .wsus__pagination nav ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /* =======================
+        BLOG DETAILS END
+    ======================== */
+
+
+    /* =======================
+        EMPTY CART START
+    ======================== */
+    .wsus__cart_empty_text .img {
+        height: 370px;
+        width: 400px;
+        margin: auto;
+    }
+
+    /* =======================
+        EMPTY CART END
+    ======================== */
+
+    /* =======================
+        CART VIEW START
+    ======================== */
+    .wsus__cart_price_list {
+        margin-top: 25px;
+    }
+
+    .wsus__cart_coupone button {
+        padding: 12px 40px;
+    }
+
+    /* =======================
+        CART VIEW END
+    ======================== */
+
+    /* =======================
+        CHECKOUT START
+    ======================== */
+    .wsus__checkout_text h3 {
+        font-size: 15px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 30%;
+    }
+
+    .wsus__checkout_sidebar ul li .text {
+        width: 72%;
+    }
+
+    .wsus__checkout_text {
+        margin-bottom: 25px;
+    }
+
+    .wsus__checkout_footer .terms_condition {
+        width: 70%;
+    }
+
+    /* =======================
+        CHECKOUT END
     ======================== */
 
 
@@ -1064,7 +1879,6 @@
         HOME PAGE START
     ======================== */
     header {
-        /* height: 70px; */
         padding-top: 3px;
     }
 
@@ -1080,8 +1894,8 @@
     }
 
     .main_menu {
-        /* top: 70px; */
         height: 60px;
+        border-bottom: 1px solid #eee;
     }
 
     .navbar-brand {
@@ -1430,9 +2244,10 @@
     }
 
     .breadcrumb_animi li:nth-child(3) {
-        width: 70px !important;
-        height: 70px !important;
-        bottom: 38% !important;
+        width: 90px !important;
+        height: 90px !important;
+        bottom: 28% !important;
+        left: 3% !important;
     }
 
     .breadcrumb_animi li:nth-child(6) {
@@ -1445,6 +2260,23 @@
     .breadcrumb_animi li:nth-child(1) {
         width: 90px !important;
         height: 90px !important;
+    }
+
+    .breadcrumb_animi li:nth-child(5) {
+        width: 85px !important;
+        height: 85px !important;
+        left: 22% !important;
+        bottom: -5% !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(5) {
+        right: 22% !important;
+        left: auto !important;
+    }
+
+    .breadcrumb_animi_r li:nth-child(3) {
+        right: 3% !important;
+        left: auto !important;
     }
 
     .wsus__breadcrumb {
@@ -1479,12 +2311,223 @@
     ======================== */
 
 
+    /* =======================
+        BECOME AUTHOR START
+    ======================== */
+    .wsus__author_header {
+        padding: 35px;
+    }
+
+    .wsus__author_header h1 {
+        font-size: 30px;
+    }
+
+    .wsus__author_header a {
+        padding: 15px 28px;
+    }
+
+    .author_bg_animi .bg_animation_r {
+        display: none;
+    }
+
+    .author_bg_animi .bg_animation li:nth-child(7) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .author_bg_animi li:nth-child(1) {
+        width: 170px;
+        height: 170px;
+        left: 0;
+        bottom: -40px;
+    }
+
+    .author_bg_animi li:nth-child(2) {
+        width: 130px;
+        height: 130px;
+        left: 30%;
+        bottom: 30%;
+    }
+
+    .author_bg_animi li:nth-child(5) {
+        bottom: 50%;
+        left: 70%;
+    }
+
+    .author_bg_animi li:nth-child(6) {
+        width: 115px;
+        height: 115px;
+        left: 45%;
+        bottom: 77%;
+    }
+
+    .author_bg_animi li:nth-child(8) {
+        width: 90px;
+        height: 90px;
+        left: -5%;
+        top: 30%;
+    }
+
+    .author_bg_animi li:nth-child(3) {
+        width: 140px;
+        height: 140px;
+        left: 60%;
+        bottom: 0;
+    }
+
+    .wsus__categories_item .icon {
+        margin-top: 15px;
+    }
+
+    /* =======================
+        BECOME AUTHOR END
+    ======================== */
 
 
+    /* =======================
+        BLOG DETAILS START  
+    ======================== */
+    .wsus__blog_details_img {
+        height: 220px;
+    }
+
+    .wsus__blog_center_img {
+        height: 220px;
+        margin-bottom: 25px;
+    }
+
+    .wsus__blog_tags_and_share .tags {
+        margin-bottom: 20px;
+    }
+
+    .wsus__comment_input_area {
+        padding: 20px;
+    }
+
+    .wsus__single_comment {
+        padding: 20px;
+    }
+
+    .comment_footer .img {
+        margin-bottom: 10px;
+    }
+
+    .wsus__single_comment.reply {
+        margin-left: 20px;
+    }
+
+    .wsus__sidebar_item {
+        padding: 20px;
+    }
+
+    .wsus__sidebar_blog ul li .text {
+        width: 61%;
+    }
+
+    .wsus__sidebar_blog ul li .text a {
+        font-size: 16px;
+    }
+
+    .wsus__sidebar_tags ul li a {
+        padding: 10px 25px;
+    }
+
+    .wsus__sidebar_subscribe_overlay {
+        padding: 20px;
+    }
+
+    .wsus__comment_list {
+        margin-bottom: 25px;
+    }
+
+    .wsus__pagination nav ul li .prev,
+    .wsus__pagination nav ul li .next {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 !important;
+    }
+
+    .wsus__pagination nav ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    /* =======================
+        BLOG DETAILS END
+    ======================== */
 
 
+    /* =======================
+        EMPTY CART START
+    ======================== */
+    .wsus__cart_empty_text .img {
+        height: 277px;
+    }
+
+    .wsus__cart_empty_text h3 {
+        font-size: 30px;
+    }
+
+    /* =======================
+        EMPTY CART END
+    ======================== */
 
 
+    /* =======================
+        CART VIEW START
+    ======================== */
+    .wsus__cart_price_list {
+        margin-top: 25px;
+    }
+
+    .wsus__cart_coupone button {
+        padding: 12px 25px;
+    }
+
+    /* =======================
+        CART VIEW END
+    ======================== */
+
+
+    /* =======================
+        CHECKOUT START
+    ======================== */
+    .wsus__checkout_text h3 {
+        font-size: 15px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 45%;
+    }
+
+    .wsus__checkout_footer button {
+        width: auto;
+    }
+
+    .wsus__checkout_footer .terms_condition {
+        width: 100%;
+    }
+
+    .wsus__checkout_sidebar ul li .text {
+        width: 52%;
+    }
+
+    .wsus__checkout_sidebar ul li .text a {
+        font-size: 15px;
+    }
+
+    .wsus__checkout_sidebar ul li .text p {
+        font-size: 12px;
+    }
+
+    .wsus__checkout_text {
+        margin-bottom: 25px;
+    }
+
+    /* =======================
+        CHECKOUT END
+    ======================== */
 
 
 
