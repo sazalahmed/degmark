@@ -1873,6 +1873,71 @@ footer {
     margin-top: 0px;
 }
 
+.wsus__product_sidebar_filter {
+    background: var(--colorPrimary);
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 25px;
+    display: none;
+}
+
+.wsus__product_sidebar_filter h5 {
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    margin-left: 15px;
+}
+
+.wsus__product_sidebar_filter span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--colorWhite);
+    border-left: 1px solid var(--colorWhite);
+    cursor: pointer;
+}
+
+.wsus__product_sidebar_filter span .minus {
+    display: none;
+}
+
+.wsus__product_sidebar_area {
+    transform-origin: top;
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__product_sidebar_area.show_filter {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.wsus__product_sidebar_filter.show_minus span .plus {
+    display: none;
+}
+
+.wsus__product_sidebar_filter.show_minus span .minus {
+    display: block;
+    line-height: 51px;
+}
+
 .wsus__product_sidebar {
     box-shadow: 0px 4px 84px rgb(0 0 0 / 6%);
     border-radius: 8px;
@@ -2203,6 +2268,7 @@ footer {
     color: var(--colorPrimary);
     text-transform: capitalize;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -3410,6 +3476,11 @@ footer {
 /*============================
     FAQ START
 ============================*/
+.wsus__faq_text h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
 .wsus__faq_text .accordion-item {
     background: #ffffff;
     box-shadow: 0px 4px 84px rgb(0 0 0 / 6%);
@@ -3515,6 +3586,7 @@ footer {
     font-weight: 400;
     color: var(--paraColor);
     margin-top: 5px;
+    display: block;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3678,6 +3750,7 @@ footer {
     padding-top: 12px;
     border-top: 1px solid rgba(255, 255, 255, 0.2470588235);
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     color: #fff;
     font-size: 14px;
@@ -4823,6 +4896,8 @@ footer {
 .wsus__login_area {
     border: 1px solid #E0E0E0;
     background: var(--colorWhite);
+    position: relative;
+    z-index: 9;
 }
 
 .wsus__login_area h2 {
@@ -4973,7 +5048,7 @@ footer {
 }
 
 .login_animi_area li:nth-child(2) {
-    left: 5%;
+    left: 0%;
     bottom: 8%;
 }
 
@@ -4984,7 +5059,7 @@ footer {
 
 .login_animi_area li:nth-child(5) {
     left: 23%;
-    bottom: 32%;
+    bottom: 36%;
     width: 100px;
     height: 100px;
 }
@@ -5014,7 +5089,7 @@ footer {
 
 .login_animi_area .bg_animation_r li:nth-child(2) {
     left: auto;
-    right: 5%;
+    right: 0%;
 }
 
 .login_animi_area .bg_animation_r li:nth-child(3) {

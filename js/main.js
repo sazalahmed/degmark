@@ -190,4 +190,15 @@ $(function () {
         $(".navbar-toggler").toggleClass("show_close_icon");
     });
 
+
+    //=======MOBILE MENU ICON======
+    $(".wsus__product_sidebar_filter").on("click", function () {
+        $(".wsus__product_sidebar_area").toggleClass("show_filter");
+    });
+
+    $(".wsus__product_sidebar_filter").on("click", function () {
+        $(".wsus__product_sidebar_filter").toggleClass("show_minus");
+    });
+
+
 }); 
