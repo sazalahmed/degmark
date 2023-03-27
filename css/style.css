@@ -540,7 +540,8 @@ header .container,
     border-bottom: 0;
 }
 
-.main_menu .wsus__droap_menu li a:hover {
+.main_menu .wsus__droap_menu li a:hover,
+.main_menu .wsus__droap_menu li a.active {
     background: #edecec;
     border-color: var(--colorWhite);
 }
@@ -646,6 +647,7 @@ header .container,
 
 /* menu end */
 
+
 /* banner start */
 .wsus__banner {
     background: var(--gradiantBg);
@@ -656,7 +658,6 @@ header .container,
     margin-top: 120px;
     position: relative;
     z-index: 9;
-    /* overflow: hidden; */
 }
 
 .wsus__banner_text h1 {
@@ -679,7 +680,7 @@ header .container,
     position: relative;
     width: 65%;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 9;
 }
 
 .wsus__banner_text form .nice-select {
@@ -4108,6 +4109,7 @@ footer {
 
 .wsus__download_item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
@@ -4172,8 +4174,8 @@ footer {
     color: var(--paraColor);
     font-size: 23px;
     padding-top: 10px;
-    margin-right: 22px;
     cursor: pointer;
+    text-align: center;
 }
 
 .wsus__download_item_right p i {
