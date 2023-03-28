@@ -217,7 +217,7 @@ $(function () {
     });
 
 
-    //=======MOBILE MENU ICON======
+    //=======PRODUCT SIDEBAR FILTER======
     $(".wsus__product_sidebar_filter").on("click", function () {
         $(".wsus__product_sidebar_area").toggleClass("show_filter");
     });

@@ -206,7 +206,8 @@ button {
     text-align: center;
 }
 
-.heading_left {
+.wsus__section_heading.heading_left h5,
+.wsus__section_heading.heading_left h2 {
     text-align: left;
 }
 
@@ -215,12 +216,14 @@ button {
     color: var(--colorPrimary);
     margin-bottom: 10px;
     font-weight: 400;
+    text-align: center;
 }
 
 .wsus__section_heading h2 {
     font-weight: 700;
     font-size: 42px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .title {
@@ -287,6 +290,7 @@ button {
     text-align: center;
     color: var(--colorWhite);
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 .wsus__breadcrumb nav ol {
@@ -298,6 +302,7 @@ button {
     font-weight: 400;
     font-size: 20px;
     color: var(--colorWhite);
+    padding: 0 !important;
 }
 
 .wsus__breadcrumb nav ol li a {
@@ -425,7 +430,7 @@ header {
 }
 
 .wsus__header_content ul li:last-child a {
-    margin-right: 0;
+    margin: 0;
 }
 
 .wsus__header_content ul li a:hover {
@@ -433,6 +438,7 @@ header {
 }
 
 /* header end */
+
 
 /* menu start */
 .main_menu {
@@ -525,7 +531,8 @@ header .container,
     font-size: 14px;
     border-bottom: 1px solid #E8E8E8;
     text-transform: capitalize;
-    padding: 15px;
+    padding: 15px !important;
+    margin: 0 !important;
     color: var(--colorBlack);
     width: 100%;
     font-weight: 500;
@@ -762,7 +769,7 @@ header .container,
 }
 
 .wsus__banner_counter li:last-child {
-    border-right: 0;
+    border: none;
 }
 
 .wsus__banner_counter li,
@@ -1006,6 +1013,7 @@ header .container,
     font-weight: 700;
     color: var(--colorWhite);
     margin-bottom: 38px;
+    text-align: center;
 }
 
 .wsus__offer_text a:hover {
@@ -1115,6 +1123,10 @@ header .container,
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__why_choose_item.last::after {
@@ -1131,6 +1143,7 @@ header .container,
     font-weight: 600;
     font-size: 20px;
     margin-top: 25px;
+    text-align: center;
 }
 
 /* why choose end */
@@ -1815,6 +1828,11 @@ footer {
     font-size: 20px;
     text-transform: capitalize;
     margin-bottom: 5px;
+    text-align: center;
+}
+
+.wsus__single_team_text p {
+    text-align: center;
 }
 
 .wsus__single_team:hover ul {
@@ -2402,6 +2420,7 @@ footer {
     margin-top: 22px;
     overflow: hidden;
     padding-right: 20px;
+    text-align: center;
 }
 
 .wsus__sidebar_licence h2 span {
@@ -2454,12 +2473,18 @@ footer {
     border-radius: 3px;
     transition: all linear .3s;
     margin-bottom: 20px;
+    text-align: center;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .wsus__sidebar_licence .common_btn {
     display: block;
     background: var(--colorYellow);
     box-shadow: none;
+    text-align: center;
 }
 
 .wsus__sidebar_licence .live:hover {
@@ -2717,7 +2742,7 @@ footer {
 }
 
 .wsus__cart_coupone input {
-    padding: 15.5px 20px;
+    padding: 16.5px 20px;
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -2770,6 +2795,7 @@ footer {
     color: var(--colorBlack);
     padding: 13px 25px;
     box-shadow: none;
+    text-align: center;
 }
 
 .wsus__cart_price_list .list_item a:hover {
@@ -2797,6 +2823,7 @@ footer {
     font-weight: 600;
     font-size: 36px;
     margin: 45px 0px 35px 0px;
+    text-align: center;
 }
 
 /*============================
@@ -2922,6 +2949,7 @@ footer {
 .wsus__checkout_footer button {
     background: var(--colorYellow);
     width: 345px;
+    text-align: center;
 }
 
 .wsus__checkout_footer button:hover {
@@ -2936,6 +2964,7 @@ footer {
     width: 60%;
     margin: auto;
     margin-top: 20px;
+    text-align: center;
 }
 
 .wsus__checkout_footer .terms_condition a {
@@ -2966,7 +2995,7 @@ footer {
 .wsus__checkout_sidebar ul li .img {
     width: 120px;
     height: 120px;
-    margin-right: 21px;
+    margin-right: 20px;
 }
 
 .wsus__checkout_sidebar ul li .text {
@@ -3046,6 +3075,7 @@ footer {
     color: #162b49;
     margin-top: 35px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 /*============================
@@ -3392,6 +3422,7 @@ footer {
     text-transform: capitalize;
     margin-top: 50px;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .wsus_error_text a {
@@ -3579,6 +3610,7 @@ footer {
     font-size: 20px;
     margin-top: 16px;
     margin-bottom: 7px;
+    text-align: center;
 }
 
 .wsus__contact_single_info a,
@@ -3588,6 +3620,7 @@ footer {
     color: var(--paraColor);
     margin-top: 5px;
     display: block;
+    text-align: center;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -3623,10 +3656,12 @@ footer {
 
 .wsus__contact_map .text h4 {
     margin-top: 0;
+    text-align: left;
 }
 
 .wsus__contact_map .text p {
     max-width: 80%;
+    text-align: left;
 }
 
 .wsus__contact_map .map {
@@ -3674,6 +3709,7 @@ footer {
     padding: 10px 40px;
     margin-top: 20px;
     box-shadow: none;
+    text-align: center;
 }
 
 /*============================
@@ -4042,7 +4078,7 @@ footer {
 }
 
 .profile_sedebar_followers ul li:last-child {
-    border-right: 0;
+    border: none;
 }
 
 .profile_sedebar_followers ul li h3 {
@@ -4075,6 +4111,7 @@ footer {
 
 .profile_sedebar_contact form button {
     width: 100%;
+    text-align: center;
 }
 
 .profile_sedebar_social ul li a {
@@ -4237,6 +4274,7 @@ footer {
     font-weight: 600;
     font-size: 36px;
     margin: 40px 0;
+    text-align: center;
 }
 
 .wsus__profile_collection .wsus__gallery_item_img {
@@ -4332,12 +4370,14 @@ footer {
 .wsus__profile_account_connect ul li a {
     padding: 8px 0px;
     width: 100%;
+    text-align: center;
 }
 
 .wsus__profile_account_connect ul li p {
     padding-top: 7px;
     padding-bottom: 10px;
     font-size: 20px;
+    text-align: center;
 }
 
 .wsus__profile_account_connect ul li .img {
@@ -4482,6 +4522,7 @@ footer {
 .wsus__rating_moadl_area .modal-body button {
     width: 100%;
     margin-top: 20px;
+    text-align: center;
 }
 
 
@@ -4660,7 +4701,6 @@ footer {
     border: 1px solid #BFBFBF;
     border-radius: 4px;
     color: #162B49;
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
     height: 55px;
@@ -4683,7 +4723,6 @@ footer {
 }
 
 .upload_product_text ul li .cancel {
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 18px;
     color: #EB5757;
@@ -4700,7 +4739,6 @@ footer {
 }
 
 .upload_product_text ul li .next {
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
@@ -4797,6 +4835,7 @@ footer {
     font-size: 18px;
     color: var(--colorBlack);
     cursor: pointer;
+    text-align: center;
 }
 
 .upload_box label span {
@@ -4860,6 +4899,10 @@ footer {
     background-size: cover !important;
 }
 
+.upload_product_done_text {
+    text-align: center;
+}
+
 .upload_product_done_text .img {
     height: 415px;
 }
@@ -4870,12 +4913,14 @@ footer {
     text-transform: capitalize;
     margin-top: 35px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .upload_product_done_text p {
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 28px;
+    text-align: center;
 }
 
 .upload_product_done_text a {
@@ -4982,6 +5027,7 @@ footer {
     border-radius: 0;
     margin-bottom: 15px;
     box-shadow: none;
+    text-align: center;
 }
 
 .wsus__login_inpu_area ul li a {
