@@ -732,6 +732,7 @@ header .container,
     position: absolute;
     top: 5px;
     right: 6px;
+    text-align: center;
 }
 
 .wsus__banner_text form button i {
@@ -1013,7 +1014,6 @@ header .container,
     font-weight: 700;
     color: var(--colorWhite);
     margin-bottom: 38px;
-    text-align: center;
 }
 
 .wsus__offer_text a:hover {
@@ -1383,6 +1383,7 @@ footer {
     top: 8px;
     right: 8px;
     padding: 11px 27px;
+    text-align: center;
 }
 
 .wsus__footer_content .footer_logo {
@@ -1953,7 +1954,7 @@ footer {
 }
 
 .wsus__product_sidebar_filter.show_minus span .minus {
-    display: block;
+    display: inline-block;
     line-height: 51px;
 }
 
@@ -2623,19 +2624,13 @@ footer {
     background: var(--colorWhite);
     color: var(--colorPrimary);
     border: 1px solid var(--colorPrimary);
+    margin-right: 10px;
 }
 
 .wsus__sidebar_author_info .view_profile:hover {
     background: var(--colorPrimary);
     color: var(--colorWhite);
 }
-
-
-
-
-
-
-
 
 /*============================
     PRODUCT DETAILS END
@@ -3727,6 +3722,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow: hidden;
 }
 
 .wsus__profile_header_text .img {
@@ -5558,6 +5554,7 @@ footer {
 
 .wsus__offer_2 .wsus__offer_text h2 {
     margin-bottom: 45px;
+    text-align: center;
 }
 
 .wsus__offer_2 .wsus__offer_text h2 span {
@@ -5672,6 +5669,9 @@ footer {
     background: var(--colorGreen);
 }
 
+.home_2 .navbar-toggler {
+    background: var(--colorGreen);
+}
 
 /*============================
     HOME PAGE 2 END
@@ -5976,6 +5976,14 @@ footer {
 
 .home_3 .wsus__scroll_btn {
     background: var(--colorBlue);
+}
+
+.home_3 .navbar-toggler {
+    background: var(--colorBlue);
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 /*============================

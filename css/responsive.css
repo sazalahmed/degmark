@@ -482,6 +482,7 @@
 
     .wsus__sidebar_author_info a {
         font-size: 16px;
+        padding: 15px 18px;
     }
 
     /* =======================
@@ -557,7 +558,7 @@
 
     .bg_animation li:nth-child(10) {
         left: 25%;
-        top: 17%;
+        top: 25%;
     }
 
     .profile_bg_animi .bg_animation_r li:nth-child(10) {
@@ -652,6 +653,12 @@
     /* =======================
         HOME PAGE 3 END
     ======================== */
+
+    .main_menu .right_menu .wsus__droap_menu {
+        left: -100px;
+    }
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
@@ -968,7 +975,7 @@
     }
 
     .wsus__single_comment.reply {
-        margin-left: 60px;
+        margin-left: 80px;
     }
 
     .wsus__sidebar_blog ul li .text {
@@ -995,7 +1002,7 @@
         CART VIEW START
     ======================== */
     .wsus__cart_coupone button {
-        padding: 12px 40px;
+        padding: 13px 40px;
     }
 
     /* =======================
@@ -1353,6 +1360,11 @@
     /* =======================
         HOME PAGE 3 END
     ======================== */
+
+    .main_menu .right_menu .wsus__droap_menu {
+        left: -100px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -1400,7 +1412,7 @@
     }
 
     .navbar-toggler.show_close_icon .close_icon {
-        display: block;
+        display: inline-block;
     }
 
     .main_menu .container {
@@ -1422,12 +1434,12 @@
 
     .main_menu .wsus__droap_menu {
         max-height: 240px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        -webkit-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -o-transform: translateX(-50%) !important;
     }
 
     .main_menu .right_menu {
@@ -1878,7 +1890,7 @@
     }
 
     .wsus__cart_coupone button {
-        padding: 12px 40px;
+        padding: 13px 40px;
     }
 
     /* =======================
@@ -2272,6 +2284,11 @@
     /* =======================
         HOME PAGE 3 END
     ======================== */
+
+    .wsus__contact_form {
+        margin-top: 25px;
+    }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -2326,7 +2343,7 @@
     }
 
     .navbar-toggler.show_close_icon .close_icon {
-        display: block;
+        display: inline-block;
     }
 
     .main_menu .container {
@@ -2348,12 +2365,12 @@
 
     .main_menu .wsus__droap_menu {
         max-height: 240px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        -webkit-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -o-transform: translateX(-50%) !important;
     }
 
     .main_menu .right_menu {
@@ -2795,7 +2812,7 @@
     }
 
     .wsus__cart_coupone button {
-        padding: 12px 40px;
+        padding: 13px 40px;
     }
 
     /* =======================
@@ -3252,6 +3269,10 @@
     /* =======================
         HOME PAGE 3 END
     ======================== */
+
+    .wsus__contact_form {
+        margin-top: 25px;
+    }
 }
 
 @media (max-width: 575.99px) {
@@ -3305,7 +3326,7 @@
     }
 
     .navbar-toggler.show_close_icon .close_icon {
-        display: block;
+        display: inline-block;
     }
 
     .main_menu .container {
@@ -3327,12 +3348,13 @@
 
     .main_menu .wsus__droap_menu {
         max-height: 240px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -o-transform: translateX(-50%) !important;
+        -webkit-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        width: 200px;
     }
 
     .main_menu .right_menu {
@@ -3863,7 +3885,7 @@
     }
 
     .wsus__cart_coupone button {
-        padding: 12px 25px;
+        padding: 13px 25px;
     }
 
     /* =======================
@@ -4317,4 +4339,25 @@
     /* =======================
         HOME PAGE 3 END
     ======================== */
+
+    .wsus__contact_form {
+        margin-top: 25px;
+    }
+
+    .wsus__sidebar_licence {
+        padding: 15px;
+    }
+
+    .wsus__sidebar_author_text .img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .wsus__sidebar_author_text .text {
+        max-width: 170px;
+    }
+
+    .wsus__profile_download_empty {
+        padding: 20px;
+    }
 }
