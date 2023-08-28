@@ -59,6 +59,13 @@
     /* =======================
         ABOUT US PAGE END
     ======================== */
+
+    /* payment start */
+    .wsus__checkout_text .nav .nav-item {
+        width: 24% !important;
+    }
+
+    /* payment end */
 }
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
@@ -658,6 +665,12 @@
         left: -100px;
     }
 
+    /* payment start */
+    .wsus__checkout_text .nav .nav-item {
+        width: 32% !important;
+    }
+
+    /* payment end */
 
 }
 
@@ -1364,6 +1377,21 @@
     .main_menu .right_menu .wsus__droap_menu {
         left: -100px;
     }
+
+    /* payment start */
+    .wsus__checkout_text .nav .nav-item {
+        width: 32% !important;
+    }
+
+    .profile_invoice_billing_info .info_text {
+        max-width: 45%;
+    }
+
+    .profile_invoice_footer_left {
+        margin-bottom: 30px;
+    }
+
+    /* payment end */
 
 }
 
@@ -2289,6 +2317,43 @@
         margin-top: 25px;
     }
 
+    /* payment start */
+    .wsus__payment_method .nav {
+        margin-top: 25px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 23% !important;
+    }
+
+    /* payment end */
+
+    /* dashboard subscription start */
+    .wsus__profile_order {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_overview {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_payment {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_invoice {
+        margin-top: 25px;
+    }
+
+    .profile_invoice_billing_info .info_text {
+        max-width: 45%;
+    }
+
+    .profile_invoice_footer_left {
+        margin-bottom: 30px;
+    }
+
+    /* dashboard subscription end */
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -3273,6 +3338,62 @@
     .wsus__contact_form {
         margin-top: 25px;
     }
+
+    /* payment start */
+    .wsus__payment_method .nav {
+        margin-top: 25px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 31% !important;
+    }
+
+    /* payment end */
+
+
+    /* dashboard subscription start */
+    .wsus__profile_order_search {
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    .wsus__profile_order {
+        border: 0;
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_overview {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_payment {
+        margin-top: 25px;
+    }
+
+
+
+
+    .wsus__profile_subdcription_invoice {
+        background: none;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .profile_invoice_billing_info {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .profile_invoice_billing_info .info_text {
+        max-width: 45%;
+        margin-top: 50px;
+    }
+
+    .profile_invoice_footer_left {
+        margin-bottom: 30px;
+    }
+
+    /* dashboard subscription end */
 }
 
 @media (max-width: 575.99px) {
@@ -4360,4 +4481,88 @@
     .wsus__profile_download_empty {
         padding: 20px;
     }
+
+    /* pricing start */
+    .wsus__single_pricing .icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wsus__single_pricing {
+        padding: 25px;
+    }
+
+    /* pricing end */
+
+
+    /* payment start */
+    .wsus__payment_area {
+        background: none;
+        padding: 0;
+    }
+
+    .wsus__payment_method .nav {
+        margin-top: 25px;
+    }
+
+    .wsus__checkout_text .nav .nav-item {
+        width: 48% !important;
+    }
+
+    /* payment end */
+
+
+    /* dashboard subscription start */
+    .wsus__profile_order_search {
+        padding: 0;
+    }
+
+    .wsus__profile_order {
+        border: 0;
+        margin-top: 25px;
+    }
+
+    .wsus__profile_order_search form {
+        min-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .wsus__profile_order_footer p {
+        margin-bottom: 20px;
+    }
+
+    .wsus__profile_subdcription_overview {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_payment {
+        margin-top: 25px;
+    }
+
+    .wsus__profile_subdcription_invoice {
+        background: none;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .profile_invoice_header .logo {
+        margin-bottom: 20px;
+    }
+
+    .profile_invoice_billing_info {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .profile_invoice_billing_info .info_text {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    .profile_invoice_footer_left {
+        margin-bottom: 30px;
+    }
+
+    /* dashboard subscription end */
 }
