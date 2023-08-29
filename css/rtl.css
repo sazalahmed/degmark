@@ -621,6 +621,87 @@
     margin-right: 15px;
 }
 
+.wsus__profile_order_search form button {
+    right: auto;
+    left: 5px;
+}
+
+.wsus__subscription_sidebar ul li a::after {
+    right: auto;
+    left: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__order_pagination li:last-child a {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.wsus__order_pagination li:first-child a {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.wsus__subscription_sidebar ul li a span {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.wsus__single_pricing .icon {
+    right: auto;
+    left: -30px;
+    padding: 60px 35px 35px 60px;
+}
+
+.wsus__single_pricing h2 {
+    padding-right: 15px;
+}
+
+.wsus__single_pricing h2 sup {
+    top: 15px;
+    margin-right: 0;
+    float: right;
+    right: -15px;
+}
+
+.wsus__single_pricing h2 sub {
+    margin-right: 10px;
+}
+
+.wsus__single_pricing_list ul li {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.wsus__single_pricing_list ul li::after {
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.wsus__payment_method {
+    text-align: left;
+}
+
+.payment_modal .btn-close {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.wsus__payment .wsus__comment_single_input span {
+    right: auto;
+    left: 20px;
+}
+
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
 

@@ -6172,6 +6172,10 @@ footer {
     text-align: right;
 }
 
+.wsus__payment_method .nav .nav-item {
+    width: 24%;
+}
+
 .wsus__payment_method .wsus__checkout_text {
     box-shadow: none;
 }
@@ -6277,6 +6281,7 @@ footer {
 
 .payment_modal .common_btn {
     width: 100%;
+    text-align: center;
 }
 
 /*============================
@@ -6310,6 +6315,10 @@ footer {
     margin-right: 15px;
     color: var(--colorBlack);
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .wsus__subscription_sidebar ul li a::after {
@@ -6603,6 +6612,7 @@ footer {
 .wsus__profile_overview_table tr td {
     padding: 16px 15px;
     width: 50%;
+    min-width: 220px;
     color: var(--colorBlack);
     font-size: 16px;
     font-style: normal;
