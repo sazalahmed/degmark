@@ -4166,6 +4166,7 @@ footer {
     height: 120px;
     overflow: hidden;
     margin-right: 15px;
+    border-radius: 8px;
 }
 
 .wsus__download_item_left .text {
@@ -4223,32 +4224,8 @@ footer {
     color: var(--ratingColor);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wsus__profile_download_empty {
     text-align: center;
-    box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.06);
-    border-radius: 4px;
-    padding: 30px 40px;
-    background: var(--colorWhite);
 }
 
 .wsus__profile_download_empty h2 {
@@ -4261,14 +4238,14 @@ footer {
 }
 
 .wsus__profile_download_empty .img {
-    width: 400px;
-    height: 260px;
+    max-width: 300px;
+    height: auto;
     margin: 0 auto;
 }
 
 .wsus__profile_download_empty h3 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 30px;
     margin: 40px 0;
     text-align: center;
 }
@@ -6160,8 +6137,6 @@ footer {
 /*============================
     PAYMENT START
 ============================*/
-.wsus__payment {}
-
 .wsus__payment_area {
     background: #f6eff3;
     padding: 30px;
@@ -6217,8 +6192,6 @@ footer {
 .wsus__payment_area .wsus__checkout_text .nav .nav-item .nav-link::before {
     display: none;
 }
-
-.payment_modal {}
 
 .payment_modal .modal-content {
     padding: 30px;
@@ -6800,9 +6773,6 @@ footer {
     padding: 16px 15px;
 }
 
-.profile_invoice_table table tr th,
-.profile_invoice_table table tr td {}
-
 .profile_invoice_table table tr td {
     padding: 16px 15px;
     color: var(--paraColor);
@@ -6935,3 +6905,982 @@ footer {
 /*=====================================
     PROFILE SUBSCRIPTION INVOICE END
 ======================================*/
+
+
+
+
+
+
+
+/* DASHBOARD START */
+/* dashboard sidebar start */
+.wsus__dashboard_sidebar {
+    margin-top: 30px;
+}
+
+.wsus__dashboard_sidebar_top {
+    height: 280px;
+    padding: 60px 20px 20px 20px;
+    background: var(--colorWhite);
+    box-shadow: 0px 3px 3px 0px rgba(23, 23, 24, 0.10);
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wsus__dashboard_sidebar_top .dashboard_banner {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wsus__dashboard_sidebar_top .img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.wsus__dashboard_sidebar_top .img img {
+    border: 2px solid var(--colorWhite);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__dashboard_sidebar_top h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 13px;
+    text-transform: capitalize;
+}
+
+.wsus__dashboard_sidebar_top p {
+    display: block;
+    margin-top: 5px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.wsus__dashboard_sidebar_menu {
+    margin-top: 20px;
+    box-shadow: 0px 3px 3px 0px rgba(23, 23, 24, 0.10);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wsus__dashboard_sidebar_menu li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 20px;
+    color: var(--paraColor);
+    text-transform: capitalize;
+    background: var(--colorWhite);
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__dashboard_sidebar_menu li:last-child a {
+    border-bottom: none;
+}
+
+.wsus__dashboard_sidebar_menu li a:hover,
+.wsus__dashboard_sidebar_menu li a.active {
+    color: var(--colorBlack);
+    background: var(--colorYellow);
+    border-color: var(--colorWhite);
+}
+
+.wsus__dashboard_sidebar_menu li a i {
+    width: 25px;
+}
+
+
+/* dashboard sidebar start */
+.wsus__dashboard_contant {
+    margin-top: 30px;
+    background: var(--colorWhite);
+    box-shadow: 0px 0px 4px 0px rgba(23, 23, 24, 0.10);
+    border-radius: 8px;
+}
+
+.wsus__dashboard_contant_top {
+    padding: 30px 30px 25px 30px;
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dashboard_heading h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+
+/* dashboard profile start */
+.wsus__dashboard_profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 30px 30px 30px;
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dashboard_profile .img {
+    width: 80px;
+    height: 80px;
+}
+
+.wsus__dashboard_profile .img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__dashboard_profile .text {
+    margin-left: 20px;
+}
+
+.wsus__dashboard_profile .text h6 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.wsus__dashboard_profile .text p {
+    margin-top: 5px;
+    line-height: 22px;
+}
+
+.wsus__dashboard_profile_info li {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dashboard_profile_info li:last-child {
+    border: none;
+}
+
+.wsus__dashboard_profile_info li span {
+    width: 130px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* dashboard profile end */
+
+/* dashboard overview start */
+
+.wsus__dash_course_table {
+    margin-top: 25px;
+}
+
+.wsus__dash_course_table .table {
+    margin: 0;
+}
+
+.wsus__dash_course_table .table tr th {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 0px 0px 30px !important;
+    color: var(--paraColor);
+    text-transform: uppercase;
+    border-bottom: none !important;
+}
+
+.wsus__dash_course_table .table tr th,
+.wsus__dash_course_table .table tr td {
+    padding: 20px 0px 20px 30px;
+    vertical-align: middle;
+}
+
+.wsus__dash_course_table .table .details {
+    min-width: 200px;
+}
+
+.wsus__dash_course_table .table .sale,
+.wsus__dash_course_table .table .action,
+.wsus__dash_course_table .table .status {
+    min-width: 115px;
+}
+
+.wsus__dash_course_table .table .action a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: var(--colorGreen);
+    color: var(--colorWhite);
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.wsus__dash_course_table .table .action a.del {
+    background: #E53935;
+    margin-left: 3px;
+}
+
+.wsus__dash_course_table .table tr:last-child td {
+    border-bottom: none !important;
+}
+
+.wsus__dash_course_table .image {
+    max-width: 140px;
+    min-width: 125px;
+}
+
+.wsus__dash_course_table .amount {
+    min-width: 150px;
+    /* width: 18%; */
+}
+
+.wsus__dash_course_table .image_category {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wsus__dash_course_table .main_category,
+.wsus__dash_course_table .sub_category {
+    position: absolute;
+    left: 12px;
+    bottom: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    color: var(--colorBlack);
+    background: var(--colorWhite);
+    box-shadow: 0px 4px 3px 0px rgba(30, 30, 47, 0.12), 0px 2px 10px 0px rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dash_course_table .sub_category {
+    bottom: 12px;
+}
+
+.wsus__dash_course_table .rating {
+    color: var(--ratingColor);
+}
+
+.wsus__dash_course_table .rating span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--colorPrimary);
+}
+
+.wsus__dash_course_table .details a {
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+.wsus__dash_course_table .sale p,
+.wsus__dash_course_table .amount p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorBlack);
+}
+
+/* dashboard overview end */
+
+/* dashboard profile edit start */
+.wsus__dashboard_profile_avatar .img {
+    position: relative;
+}
+
+.wsus__dashboard_profile_avatar .img label {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    bottom: 7px;
+    right: -11px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all linear.3s;
+    background: var(--colorWhite);
+    border: 1px solid rgba(30, 30, 47, 0.10);
+    -webkit-transition: all linear.3s;
+    -moz-transition: all linear.3s;
+    -ms-transition: all linear.3s;
+    -o-transition: all linear.3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wsus__dashboard_profile_avatar .img label img {
+    width: 13px !important;
+    height: 10px !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.wsus__dashboard_profile_avatar .img label:hover {
+    background: var(--colorPrimary);
+}
+
+.wsus__dashboard_profile_avatar .img label:hover img {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(1700%) hue-rotate(284deg) brightness(115%) contrast(100%);
+    -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(1700%) hue-rotate(284deg) brightness(115%) contrast(100%);
+}
+
+.wsus__dashboard_profile_update {
+    padding: 17px 30px 30px 30px;
+}
+
+.wsus__dashboard_profile_update_info {
+    margin-top: 13px;
+}
+
+.wsus__dashboard_profile_update_info label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.wsus__dashboard_profile_update_info input,
+.wsus__dashboard_profile_update_info textarea {
+    margin-top: 5px;
+    border: 1px solid rgba(30, 30, 47, 0.10);
+    background: none;
+}
+
+.wsus__dashboard_profile_update_btn {
+    margin-top: 30px;
+}
+
+/* dashboard profile edit end */
+
+
+/* dashboard courses start */
+.wsus__dash_course_searchbox {
+    padding: 20px;
+}
+
+.wsus__dash_course_searchbox .input input {
+    width: 100%;
+}
+
+.wsus__dash_course_searchbox .nice-select {
+    width: 100% !important;
+}
+
+
+.wsus__dash_course_searchbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 25px;
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dash_course_searchbox .input {
+    position: relative;
+}
+
+.wsus__dash_course_searchbox .input input {
+    width: 270px;
+    padding: 10px 35px 10px 20px;
+    border: 1px solid rgba(30, 30, 47, 0.10);
+    background: none;
+}
+
+.wsus__dash_course_searchbox .input button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.wsus__dash_course_searchbox .nice-select {
+    border-radius: 4px;
+    border: 1px solid rgba(30, 30, 47, 0.10);
+    height: 42px;
+    line-height: 42px;
+    width: 200px !important;
+    padding-left: 15px;
+}
+
+.wsus__dash_course_searchbox .nice-select:after {
+    margin-top: 0px;
+    right: 15px;
+}
+
+.wsus__dash_course_table .status p {
+    max-width: 75px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 2px 7px;
+    color: var(--colorWhite);
+    border-radius: 4px;
+}
+
+.wsus__dash_course_table .status .active {
+    background: #159F46;
+}
+
+.wsus__dash_course_table .status .Pending {
+    background: #E79520;
+}
+
+.wsus__dash_course_table .status .delete {
+    background: #E53935;
+}
+
+/* dashboard courses end */
+.wsus__dash_reviews {
+    padding: 0px 30px 30px 30px;
+}
+
+.wsus__dash_reviews .wsus__single_comment {
+    border-radius: 10px;
+}
+
+/* dashboard order start */
+.wsus__dash_order_table .table {
+    margin: 0;
+}
+
+.wsus__dash_order_table .table tr {
+    display: flex;
+}
+
+.wsus__dash_order_table .table tr th {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 20px 0px 20px 30px !important;
+    color: var(--paraColor);
+    text-transform: uppercase;
+    border-top: none !important;
+}
+
+.wsus__dash_order_table .table tr th,
+.wsus__dash_order_table .table tr td {
+    padding: 20px 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: none;
+    border-top: 1px solid rgba(30, 30, 47, 0.10)
+}
+
+.wsus__dash_order_table .details {
+    min-width: 280px;
+    width: 40%;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.wsus__dash_order_table .sale,
+.wsus__dash_order_table .invoice,
+.wsus__dash_order_table .date,
+.wsus__dash_order_table .method,
+.wsus__dash_order_table .icon {
+    min-width: 120px;
+    width: 14%;
+}
+
+.wsus__dash_order_table .date {
+    min-width: 120px;
+    width: 20%;
+}
+
+.wsus__dash_order_table .method {
+    text-align: start;
+}
+
+.wsus__dash_order_table .details .rating {
+    color: var(--ratingColor);
+}
+
+.wsus__dash_order_table .details .rating span {
+    color: var(--colorPrimary);
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.wsus__dash_order_table .details a {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.wsus__dash_order_table .sale p,
+.wsus__dash_order_table .invoice p,
+.wsus__dash_order_table .date p,
+.wsus__dash_order_table .method p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.wsus__dash_order_table .icon a {
+    width: 20px;
+    height: 20px;
+}
+
+.wsus__dash_order_table .icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(49%) saturate(4327%) hue-rotate(213deg) brightness(96%) contrast(97%);
+}
+
+/* dashboard order end */
+
+
+/* dashboard invoice start */
+.wsus__invoice_top {
+    padding: 40px 60px 0px 60px;
+    overflow: hidden;
+}
+
+.wsus__invoice_logo {
+    width: 150px;
+}
+
+.wsus__invoice_heading {
+    text-align: end;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wsus__invoice_heading h2 {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(23, 23, 24, 0.50);
+}
+
+.wsus__invoice_heading::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: -60px;
+    width: 680px;
+    height: 20px;
+    background: rgba(23, 23, 24, 0.10);
+}
+
+.wsus__invoice_description {
+    padding: 12px 60px 0px 60px;
+}
+
+.wsus__invoice_description h4 {
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+}
+
+.wsus__invoice_address h5 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.wsus__invoice_address p {
+    width: 55%;
+    line-height: 26px;
+    margin-top: 12px;
+}
+
+.wsus__invoice_date {
+    text-align: end;
+}
+
+.wsus__invoice_date h5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.wsus__invoice_date h5 span {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.wsus__invoice_date .date {
+    margin-top: 14px;
+}
+
+.wsus__invoice_table {
+    padding: 75px 60px 0px 60px;
+}
+
+.wsus__invoice_table .table {
+    margin: 0;
+    border: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__invoice_table .table tr {
+    display: flex;
+}
+
+.wsus__invoice_table .table tr th {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 0px 8px 0px !important;
+    text-transform: capitalize;
+    border-top: none !important;
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.wsus__invoice_table .table tr th,
+.wsus__invoice_table .table tr td {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: none;
+    border-bottom: 1px solid rgba(30, 30, 47, 0.10)
+}
+
+.wsus__invoice_table .serial {
+    min-width: 100px;
+    width: 10%;
+    text-align: center;
+}
+
+.wsus__invoice_table .description {
+    min-width: 240px;
+    width: 55%;
+}
+
+.wsus__invoice_table .price {
+    min-width: 100px;
+    width: 10%;
+}
+
+.wsus__invoice_table .quantity {
+    min-width: 120px;
+    width: 15%;
+    text-align: center;
+}
+
+.wsus__invoice_table .total {
+    min-width: 120px;
+    width: 10%;
+    text-align: center;
+}
+
+.wsus__invoice_final_total {
+    padding: 16px 95px 30px;
+}
+
+.wsus__invoice_final_total_right {
+    text-align: right;
+}
+
+.wsus__invoice_final_total_right h6 {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.wsus__invoice_final_total_right h6 span {
+    color: var(--colorBlack);
+    margin-left: 10px;
+}
+
+.wsus__invoice_final_total_right h5 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 33px;
+}
+
+.wsus__invoice_final_total_right h5 span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: var(--colorBlack);
+}
+
+.wsus__invoice_bottom {
+    margin-top: 175px;
+    padding: 13px 95px 13px 95px;
+    border-top: 1px solid rgba(30, 30, 47, 0.10)
+}
+
+.wsus__invoice_bottom p {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.wsus__invoice_bottom p span {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid rgba(30, 30, 47, 0.10)
+}
+
+/* dashboard invoice end */
+
+.wsus__dashboard .common_btn {
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+.wsus__dash_download {
+    padding: 30px;
+}
+
+.wsus__dash_download .wsus__profile_download {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.wsus__dash_download .wsus__download_item {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-bottom: 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+.wsus__dash_download .wsus__download_item:first-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* dashboard payout start */
+.wsus__dash_payout_top {
+    padding: 25px 40px 0px 30px;
+}
+
+.wsus__dash_payout_top h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.wsus__dash_payout_selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.wsus__dash_payout_selector .selector {
+    width: 32%;
+}
+
+.wsus__dash_payout_selector .nice-select {
+    border: solid 1px rgba(30, 30, 47, 0.10);
+    height: 46px;
+    line-height: 44px;
+    border-radius: 6px;
+}
+
+.wsus__dash_payout_selector .nice-select:after {
+    margin-top: 0;
+    right: 20px;
+}
+
+.wsus__dash_payout_selector .payout_print {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px s olid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dash_payout_selector .payout_print img {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.wsus__dash_payout_table .table {
+    margin: 0;
+}
+
+.wsus__dash_payout_table .table tr th {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 25px 0px 10px 30px !important;
+    color: var(--colorBlack);
+    text-transform: uppercase;
+    border-top: none !important;
+}
+
+.wsus__dash_payout_table .table tr th,
+.wsus__dash_payout_table .table tr td {
+    padding: 20px 0px 20px 30px;
+    border-top: 1px solid rgba(30, 30, 47, 0.10);
+}
+
+.wsus__dash_payout_table .checkbox {
+    min-width: 60px;
+    width: 5%;
+}
+
+.wsus__dash_payout_table .date {
+    min-width: 120px;
+}
+
+.wsus__dash_payout_table .status {
+    min-width: 110px;
+}
+
+.wsus__dash_payout_table .amount {
+    min-width: 100px;
+}
+
+.wsus__dash_payout_table .method {
+    padding-right: 20px !important;
+}
+
+.wsus__dash_payout_table .id p,
+.wsus__dash_payout_table .date p,
+.wsus__dash_payout_table .amount p,
+.wsus__dash_payout_table .method p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--paraColor);
+    text-transform: capitalize;
+}
+
+.wsus__dash_payout_table .status p {
+    font-size: 13px;
+    font-weight: 600;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--colorWhite);
+    background: #159F46;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.wsus__dash_payout_table .status .pending {
+    background: #E79520;
+}
+
+.wsus__dash_payout_table .checkbox input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    border: 1px solid rgba(23, 23, 24, 0.40);
+}
+
+.wsus__dash_payout_table .form-check-input[type=checkbox] {
+    border-radius: 3px;
+}
+
+.wsus__dash_payout_table .form-check {
+    margin-bottom: 0;
+}
+
+.wsus__dash_payout_table .form-check-inline {
+    margin-right: 0;
+}
+
+/* dashboard payout end */
+
+.profile_edit_tab {
+    padding: 30px 30px 0px 30px;
+    gap: 10px;
+}
+
+.profile_edit_tab li button {
+    background: var(--colorPrimary) !important;
+    color: var(--colorWhite) !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 3px !important;
+    border: 1px solid transparent !important;
+    transition: all linear .3s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.profile_edit_tab li button.active,
+.profile_edit_tab li button:hover {
+    background: var(--colorYellow) !important;
+    color: var(--colorBlack) !important;
+    border-color: var(--colorYellow) !important;
+}
+
+
+
+/* DASHBOARD END */
+
+
+
+
+
+
+.wsus__product_details_slider_item {
+    height: 520px;
+    margin: 0;
+}
+
+.wsus__product_details_video {
+    height: 465px;
+}
+
+.wsus__product_details_video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.wsus__product_details_audio {
+    height: 57px;
+}
+
+.wsus__product_details_audio audio {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: #F1F3F4;
+}

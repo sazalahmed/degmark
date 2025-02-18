@@ -672,6 +672,23 @@
 
     /* payment end */
 
+
+
+
+
+    /* new css start */
+    .wsus__dash_course_searchbox {
+        padding: 25px 25px;
+    }
+
+    .wsus__dashboard_profile_avatar .text {
+        width: 80%;
+    }
+
+    /* new css end */
+
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
@@ -1392,6 +1409,33 @@
     }
 
     /* payment end */
+
+
+
+
+
+
+
+    /* new css start */
+    .wsus__dashboard_contant_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__dash_course_searchbox {
+        padding: 25px 25px;
+    }
+
+    .wsus__dashboard_profile_avatar .text {
+        width: 80%;
+    }
+
+    /* new css end */
+
+
+
+
+
+
 
 }
 
@@ -2354,6 +2398,46 @@
     }
 
     /* dashboard subscription end */
+
+
+
+
+
+
+
+
+    /* new css start */
+    .wsus__dashboard_profile_info li span {
+        width: 100%;
+    }
+
+    .wsus__dashboard_contant_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__dash_course_searchbox {
+        padding: 25px 25px;
+    }
+
+    .wsus__dash_course_searchbox .input input {
+        width: 200px;
+    }
+
+    .wsus__download_item_right {
+        margin-top: 10px;
+    }
+
+    .wsus__dashboard_profile_avatar .text {
+        width: 74%;
+        margin-top: 10px;
+    }
+
+    /* new css end */
+
+
+
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -3394,6 +3478,44 @@
     }
 
     /* dashboard subscription end */
+
+
+
+
+
+
+    /* new css start */
+    .wsus__dashboard_profile_info li span {
+        width: 100%;
+    }
+
+    .wsus__dashboard_contant_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__dash_course_searchbox {
+        padding: 25px 25px;
+    }
+
+    .wsus__dash_course_searchbox .input input {
+        width: 220px;
+    }
+
+    .wsus__dash_payout_selector .selector {
+        width: 48%;
+    }
+
+    .wsus__dashboard_profile_avatar .text {
+        width: 77%;
+        margin-top: 10px;
+    }
+
+    /* new css end */
+
+
+
+
+
 }
 
 @media (max-width: 575.99px) {
@@ -4565,4 +4687,55 @@
     }
 
     /* dashboard subscription end */
+
+
+
+
+
+
+
+    /* new css start */
+    .wsus__dashboard_profile_info li span {
+        width: 100%;
+    }
+
+    .wsus__dashboard_contant_top .common_btn {
+        margin-top: 10px;
+    }
+
+    .wsus__dash_course_searchbox {
+        padding: 25px 25px;
+    }
+
+    .wsus__dash_course_searchbox .input {
+        margin-bottom: 10px;
+    }
+
+    .selector,
+    .wsus__dash_course_searchbox .input,
+    .wsus__dash_course_searchbox .input input,
+    .wsus__dash_course_searchbox .nice-select {
+        width: 100% !important;
+    }
+
+    .selector_1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .wsus__dash_payout_selector .selector {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .wsus__dashboard_profile_avatar .text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* new css end */
+
+
+
 }
