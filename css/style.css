@@ -6912,8 +6912,14 @@ footer {
 
 
 
-/* DASHBOARD START */
-/* dashboard sidebar start */
+
+
+
+
+
+
+
+/* NEW DASHBOARD CSS START */
 .wsus__dashboard_sidebar {
     margin-top: 30px;
 }
@@ -7009,8 +7015,6 @@ footer {
     width: 25px;
 }
 
-
-/* dashboard sidebar start */
 .wsus__dashboard_contant {
     margin-top: 30px;
     background: var(--colorWhite);
@@ -7029,9 +7033,6 @@ footer {
     text-transform: capitalize;
 }
 
-
-
-/* dashboard profile start */
 .wsus__dashboard_profile {
     display: flex;
     flex-wrap: wrap;
@@ -7088,10 +7089,6 @@ footer {
     font-weight: 400;
     text-transform: capitalize;
 }
-
-/* dashboard profile end */
-
-/* dashboard overview start */
 
 .wsus__dash_course_table {
     margin-top: 25px;
@@ -7153,7 +7150,6 @@ footer {
 
 .wsus__dash_course_table .amount {
     min-width: 150px;
-    /* width: 18%; */
 }
 
 .wsus__dash_course_table .image_category {
@@ -7200,9 +7196,6 @@ footer {
     color: var(--colorBlack);
 }
 
-/* dashboard overview end */
-
-/* dashboard profile edit start */
 .wsus__dashboard_profile_avatar .img {
     position: relative;
 }
@@ -7276,10 +7269,6 @@ footer {
     margin-top: 30px;
 }
 
-/* dashboard profile edit end */
-
-
-/* dashboard courses start */
 .wsus__dash_course_searchbox {
     padding: 20px;
 }
@@ -7291,7 +7280,6 @@ footer {
 .wsus__dash_course_searchbox .nice-select {
     width: 100% !important;
 }
-
 
 .wsus__dash_course_searchbox {
     display: flex;
@@ -7356,7 +7344,6 @@ footer {
     background: #E53935;
 }
 
-/* dashboard courses end */
 .wsus__dash_reviews {
     padding: 0px 30px 30px 30px;
 }
@@ -7365,7 +7352,6 @@ footer {
     border-radius: 10px;
 }
 
-/* dashboard order start */
 .wsus__dash_order_table .table {
     margin: 0;
 }
@@ -7452,10 +7438,6 @@ footer {
     filter: brightness(0) saturate(100%) invert(37%) sepia(49%) saturate(4327%) hue-rotate(213deg) brightness(96%) contrast(97%);
 }
 
-/* dashboard order end */
-
-
-/* dashboard invoice start */
 .wsus__invoice_top {
     padding: 40px 60px 0px 60px;
     overflow: hidden;
@@ -7645,8 +7627,6 @@ footer {
     border-left: 1px solid rgba(30, 30, 47, 0.10)
 }
 
-/* dashboard invoice end */
-
 .wsus__dashboard .common_btn {
     font-size: 16px;
     padding: 10px 25px;
@@ -7681,7 +7661,6 @@ footer {
     padding: 0;
 }
 
-/* dashboard payout start */
 .wsus__dash_payout_top {
     padding: 25px 40px 0px 30px;
 }
@@ -7816,8 +7795,6 @@ footer {
     margin-right: 0;
 }
 
-/* dashboard payout end */
-
 .profile_edit_tab {
     padding: 30px 30px 0px 30px;
     gap: 10px;
@@ -7851,15 +7828,6 @@ footer {
     border-color: var(--colorYellow) !important;
 }
 
-
-
-/* DASHBOARD END */
-
-
-
-
-
-
 .wsus__product_details_slider_item {
     height: 520px;
     margin: 0;
@@ -7867,6 +7835,8 @@ footer {
 
 .wsus__product_details_video {
     height: 465px;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
 .wsus__product_details_video iframe {
@@ -7884,3 +7854,5 @@ footer {
     border-radius: 4px;
     background: #F1F3F4;
 }
+
+/* NEW DASHBOARD CSS END */
